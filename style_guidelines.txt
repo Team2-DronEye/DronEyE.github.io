@@ -1,1 +1,3 @@
-
+Write guidelines for Web-Styling
+Main colour:
+Font:
