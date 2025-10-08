@@ -1,1 +1,19 @@
+# Web Project Style Guidelines
+
+## General
+- Encoding: UTF-8
+- Line endings: 
+
+## HTML
+- Include `meta charset="utf-8"`
+
+## CSS
+- Prefer classes over IDs for styling
+- Consider BEM for complex components: .block, .block__elem, .block--mod
+
+## JavaScript
+
+
+## Git / Commits
+
 
