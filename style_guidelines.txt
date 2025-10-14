@@ -7,9 +7,19 @@
 ## HTML
 - Include `meta charset="utf-8"`
 
+
 ## CSS
-- Prefer classes over IDs for styling
-- Consider BEM for complex components: .block, .block__elem, .block--mod
+Text size:
+Colour:
+Main
+Main2
+Main3
+Sub1
+Sub2
+Dark-monotone:
+Middle-monotone:
+Light-monotone:
+
 
 ## JavaScript
 
