@@ -19,7 +19,7 @@ Sub2
 Dark-monotone:
 Middle-monotone:
 Light-monotone:
-
+##we need to standardize colour notation: colour name / hex(#RRGGBB) / rgb / rgba / hsl
 
 ## JavaScript
 
