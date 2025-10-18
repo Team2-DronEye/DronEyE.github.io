@@ -1,0 +1,10 @@
+<! DOCTYPE html>
+<div class= "about-section">
+  <h1>About</h1>
+  <h2>Start By</h2>
+  <h3>Discovering DronEye</h3>
+  <p>We believe that everyone should be able to visit limited amount of places around the world through a live drone. This device enables customers to contact other people. This way, you can easily fly a drone in real-time without leaving the comfort of your home.</p>
+</div> 
+
+<h2 style="text-align:center">Our team</h2>
+
