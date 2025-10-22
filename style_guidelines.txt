@@ -10,15 +10,7 @@
 
 ## CSS
 Text size:
-Colour:
-Main
-Main2
-Main3
-Sub1
-Sub2
-Dark-monotone:
-Middle-monotone:
-Light-monotone:
+Colour'
 ##we need to standardize colour notation: colour name / hex(#RRGGBB) / rgb / rgba / hsl
 
 ## JavaScript
