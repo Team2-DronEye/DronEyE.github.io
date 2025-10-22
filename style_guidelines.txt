@@ -11,14 +11,17 @@
 ## CSS
 Text size:
 Colour:
-Main
-Main2
-Main3
-Sub1
-Sub2
-Dark-monotone:
-Middle-monotone:
-Light-monotone:
+color :#e6e6fa
+color :#add8e6
+color :#87ceeb
+color :#00bfff
+color :#0086b3
+
+Fonts:
+HK MODULAR # use it for headings 
+Arimo # for general use 
+
+
 ##we need to standardize colour notation: colour name / hex(#RRGGBB) / rgb / rgba / hsl
 
 ## JavaScript
