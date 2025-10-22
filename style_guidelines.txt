@@ -10,7 +10,7 @@
 
 ## CSS
 Text size:
-Colour'
+Colour:
 ##we need to standardize colour notation: colour name / hex(#RRGGBB) / rgb / rgba / hsl
 
 ## JavaScript
