@@ -18,8 +18,8 @@ Colour:
 #0086b3
 
 Fonts:
-HK MODULAR
-Arino
+HK MODULAR # use it for headings 
+Arimo # for general use 
 
 
 ##we need to standardize colour notation: colour name / hex(#RRGGBB) / rgb / rgba / hsl
