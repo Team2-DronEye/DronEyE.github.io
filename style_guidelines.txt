@@ -11,6 +11,17 @@
 ## CSS
 Text size:
 Colour:
+#e6e6fa
+#add8e6
+#87ceeb
+#00bfff
+#0086b3
+
+Fonts:
+HK MODULAR
+Arino
+
+
 ##we need to standardize colour notation: colour name / hex(#RRGGBB) / rgb / rgba / hsl
 
 ## JavaScript
