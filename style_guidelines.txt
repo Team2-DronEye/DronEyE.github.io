@@ -11,11 +11,11 @@
 ## CSS
 Text size:
 Colour:
-#e6e6fa
-#add8e6
-#87ceeb
-#00bfff
-#0086b3
+color :#e6e6fa
+color :#add8e6
+color :#87ceeb
+color :#00bfff
+color :#0086b3
 
 Fonts:
 HK MODULAR # use it for headings 
