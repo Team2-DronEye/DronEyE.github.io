@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="../CSS/css.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Team Page</title>
   <style>
+    /* === THEME COLORS ===
+       Dark blue: #222f3d
+       Bright blue: #0099ff
+    */
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      color: white;
+
+      /* Smooth animated gradient background */
+      background: linear-gradient(-45deg, #222f3d, #0099ff, #222f3d, #0099ff);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+    }
+
+    /* Background animation */
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     .center-text {
       text-align: center;
       padding: 40px;
-      background-color: #e0e7ff;
+      background-color: rgba(0, 0, 0, 0.2);
     }
 
     h1 {
       font-size: 48px;
       font-weight: bold;
-      color: rgb(98, 98, 240);
+      color: #0099ff;
       margin-bottom: 10px;
+      text-shadow: 0 0 10px #0099ff;
     }
 
     .intro {
       font-size: 20px;
-      color: #333;
+      color: #e0e7ff;
       margin-bottom: 20px;
     }
 
@@ -37,6 +56,14 @@
       padding: 30px;
       color: white;
       flex-wrap: wrap;
+      background: linear-gradient(to right, rgba(34, 47, 61, 0.85), rgba(0, 153, 255, 0.7));
+      margin-bottom: 10px;
+      border-radius: 10px;
+      transition: background 0.5s ease;
+    }
+
+    .team-member:hover {
+      background: linear-gradient(to right, rgba(0, 153, 255, 0.9), rgba(34, 47, 61, 0.9));
     }
 
     .member-info {
@@ -48,17 +75,19 @@
       font-size: 28px;
       font-weight: bold;
       margin-bottom: 10px;
+      color: #00b0ff;
     }
 
     .description {
       font-size: 18px;
+      color: #d0e0ff;
     }
 
     .more-info {
       display: none;
       margin-top: 10px;
       font-size: 16px;
-      color: #f0f0f0;
+      color: #f0f8ff;
     }
 
     .show {
@@ -67,17 +96,18 @@
 
     .more-btn {
       margin-top: 10px;
-      background-color: white;
-      color: black;
+      background-color: #0099ff;
+      color: white;
       border: none;
       padding: 8px 16px;
       border-radius: 5px;
       cursor: pointer;
       font-size: 14px;
+      transition: background-color 0.3s ease;
     }
 
     .more-btn:hover {
-      background-color: #ddd;
+      background-color: #007acc;
     }
 
     .profile-pic {
@@ -85,15 +115,8 @@
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid white;
+      border: 3px solid #ffffff;
     }
-
-    .member-1 { background-color: #4A90E2; }
-    .member-2 { background-color: #50E3C2; }
-    .member-3 { background-color: #F5A623; }
-    .member-4 { background-color: #D0021B; }
-    .member-5 { background-color: #8B572A; }
-    .member-6 { background-color: #7B61FF; }
 
     @media (max-width: 600px) {
       .team-member {
@@ -115,7 +138,6 @@
     <p class="intro">Welcome to our official team web page</p>
   </div>
 
-  <!-- Member Template -->
   <div class="team-member member-1">
     <img class="profile-pic" src="https://via.placeholder.com/100" alt="Member 1 Photo">
     <div class="member-info">
