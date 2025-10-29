@@ -1,25 +1,145 @@
 <!DOCTYPE html>
-<html lang="eng">
-<style>
-body {
-    background-color: #e6e6fa;
-}
-</style>
-
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <title>Product Features page</title>
-</head>
+    <meta charset="utf-8">
+    <title>Product Features</title>
+    <style>
+        body {
+            background-color: #e6e6fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        .header {
+            background-color: #0086b3;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav {
+            margin-top: 10px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .textBox {
+            width: 60%;
+            float: left;
+            border: 2px solid #add8e6;
+            background-color: #ffffff;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .imageBox {
+            width: 35%;
+            float: right;
+            text-align: center;
+        }
+
+        .imageBox img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .buyButton {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #00bfff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .buyButtonHover {
+            background-color: #005f80;
+        }
+
+        .features {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #add8e6;
+            border-radius: 6px;
+        }
+
+        .features h2 {
+            color: #0086b3;
+        }
+
+        .features ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .contactThingy {
+            background-color: #0086b3;
+            color: white;
+            text-align: center;
+            padding: 45px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
 <body>
-    <h1 style = "font-family: Comic Sans MS; font-size: 24px;">Brief product description</h2>
-    
-    <p1>Check out a limited amount of places around the world through a 
-        live drone before making a decision of visiting the location or travel digitally. 
-        This product would be paid through a subscription. You would also be able to contact other drones 
-        with this product to ask their opinions on the locations or maybe if they know where to find 
-        something at a certain area.</p1>
-    <br>
-    <p2>Buy a subscription!: <a href="https://www.youtube.com/">THIS IS A TEMPORARY LINK</a></p2>
+    <div class="header">
+        <h1>DronEyE</h1>
+        <div class="nav">
+            <!-- yeah this is temporary lmao -->
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="textBox">
+            <p>
+                Check out a limited amount of places around the world through a 
+                live drone before making a decision of visiting the location or travel digitally. 
+                This product would be paid through a subscription. You would also be able to contact other drones 
+                with this product to ask their opinions on the locations or maybe if they know where to find 
+                something at a certain area.
+            </p>
+            <a href="https://www.youtube.com/" class="buyButton">Buy a Subscription</a>
+        </div>
+
+        <div class="imageBox">
+            <img src="https://media.discordapp.net/attachments/1278849451431170063/1412591043932585994/IMG_2150.png?ex=690204ad&is=6900b32d&hm=29acf153e17b710f949431e88e89e617837e62350679ed91064ae8225fdcb85e&=&format=webp&quality=lossless&width=1326&height=973" alt="image lol">
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="features">
+            <h2>Why Choose DronEyE?</h2>
+            <ul>
+                <li>lorem ipsum something something</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contactThingy">
+        <p>idk this is temporary</p>
+    </div>
 </body>
 </html>
