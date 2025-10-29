@@ -1,0 +1,56 @@
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="commonCSS.css">
+     <script src="commonJS.js"></script>
+</head>
+<body>
+<div class = "header">
+    <div id="headerTextPic">
+        <h1> DRONEYE </h1>
+        <img src = "IMG_3008.PNG" alt = "DronEye logo" width = "150px" height="150px">
+    </div>
+<div id = "menu">
+  <button id = "menuBar">
+        <span class = "blue-bar"></span>
+        <span class = "blue-bar"></span>
+        <span class = "blue-bar"></span>
+    </button>
+
+  <div id="dropdownContent">
+    <a href="About Us" class = "menu-links" target = "_blank">
+        <button class = "menu-button">
+            About Us</button>
+      </a>
+
+      <a href="Pricing" class = "menu-links" target = "_blank">
+        <button class = "menu-button">
+            Product Features</button>
+      </a>
+
+      <a href="About company" class = "menu-links" target = "_blank">
+        <button class = "menu-button">
+            Pricing</button>
+      </a>
+
+      <a href="idk" class = "menu-links" target = "_blank">
+        <button class = "menu-button">
+            Contact</button>
+      </a>
+
+      <a href="smth" class = "menu-links" target = "_blank">
+        <button class = "menu-button">
+            Our Team</button>
+      </a>
+      <a class = "menu-links" href="index" target = "_blank">
+        <img src = "IMG_3008.PNG" alt = "DronEye logo" height = "250px" width = "250px">
+      </a>
+      </div>
+  </div>
+</div>
+</body>
+</html>
