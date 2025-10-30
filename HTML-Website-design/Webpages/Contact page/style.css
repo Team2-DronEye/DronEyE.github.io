@@ -5,10 +5,15 @@
 
 }
 
+main {
+
+    margin: 200px;
+}
+
 body {
-    color: #333;
+    color: #0086b3;
     font-family: sans-serif;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,9 +22,8 @@ body {
 
 .contact{
     
-    margin: 0 auto;
-    max-width: 1500px !important;
-    width: 95% !important;
+    margin: 15px auto;
+    width: 800px !important;
     padding: 40px 0;
 
 }
@@ -38,8 +42,8 @@ body {
     max-width: 100;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    max-width: 1000px; /* 画面幅を超えない上限を設定 */
-    margin: 0 auto;    /* 中央寄せ */
+    max-width: 1000px; 
+    margin: 0 auto;    
 
 }
 
@@ -74,11 +78,11 @@ body {
 
 .contact-submit {
     width: 250px;
-    background-color: #333;
-    color: #fff;
+    background-color: white;
+    color: #0086b3;
     font-weight: bold;
     display: block;
-    margin: 0 auto;
+    margin: 25px auto;
     font-size: 16px;
     padding: 15px;
     border-radius: 100vh;
@@ -97,7 +101,7 @@ body {
 }
 
 .header {
-      background-color: #e6e6fa;
+    background-color: #e6e6fa;
     width: 100%;
     height: 150px;
     display: flex;
@@ -109,6 +113,9 @@ body {
     top: 0;
     left: 0;
     z-index: 10;
+    position: fixed;
+    z-index: 1000;  
+    
     
 
 }
@@ -172,17 +179,57 @@ h1 {
 }
 
 .menu-button {
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 8%;
-    display: flex;
-    width: 87%;
-    padding: 15px;
-    font-size: 20px;
-    color: white;
-    background: linear-gradient(to bottom, #00bfff, #0086b3);
-    border: none;
-    border-radius: 10px;
-    transition: 0.3s;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 8%;
+  display: flex;
+  width: 87%;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to bottom, #00bfff, #0086b3);
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: #00bfff;
+  padding: 24px 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav li a {
+  color: #00bfff;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.footer-nav li a:hover {
+  text-decoration: underline;
 }
 
