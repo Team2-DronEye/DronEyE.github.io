@@ -1,0 +1,22 @@
+function openDropdown() {
+    const dropdown = document.getElementById('dropdownContent');
+    if (dropdown) {
+        dropdown.style.width = '250px';
+    }
+}
+
+function closeDropdown() {
+    const dropdown = document.getElementById('dropdownContent');
+    if (dropdown) {
+        dropdown.style.width = '0';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.getElementById('menu');
+
+    if (menu) {
+        menu.addEventListener('mouseover', openDropdown);
+        menu.addEventListener('mouseout', closeDropdown);
+    }
+});
