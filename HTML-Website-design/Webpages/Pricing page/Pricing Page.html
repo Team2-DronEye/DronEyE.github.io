@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../CSS/css.css">
     <style>
+        html {
+            font-size: 16px;
+        }
         h1, h2 {
             text-align: center;
         }
@@ -17,6 +19,8 @@
             width: 10%;
             border: 10px solid #0099ff;
             padding: 20px 20px 50px 20px;
+            margin-left:0px;
+            text-align: center;
         }
 
         #TierTwo {
@@ -27,6 +31,7 @@
             width: 10%;
             border: 10px solid #0099ff;
             padding: 20px 20px 50px 20px;
+            text-align: center;
         }
 
         #TierThree {
@@ -37,10 +42,25 @@
             width: 10%;
             border: 10px solid #0099ff;
             padding: 20px 20px 50px 20px;
+            text-align: center;
         }
 
-        #PriceButton {
-            background-color: #9ed8ff;
+        .buyButton {
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 0px;
+            padding: 10px 15px;
+            width: 70%;
+            background-color: #00bfff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.5vw;
+            text-align: center;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
         }
     </style>
 </head>
@@ -57,32 +77,24 @@
             </button>
         </div>
     </div>
-</body>
-<body>
     <h1>
         PRICING PAGE
     </h1>
     <h2>
         Price will be a subscription service model with multiple tiers. (We can make varying coloured boxes depending on which tier of subscription is being displayed, as a design Idea)
     </h2>
-    <div id="Pricings" style="position: relative;  width: 70%; padding: 100px; display: flex; margin-left: auto; margin-right: auto; align-self: center ">
+    <div id="Pricings" style="position: relative;  width: 70%; padding: 100px; display: flex; margin-left: auto; margin-right: auto; align-self: center; font-family: Garamond; font-size: 120%">
         <div id="TierOne">
             Bronze tier members get ok stuff
-            <button id="PriceButton">
-                Learn more about bronze tier
-            </button>
+            <a href="https://www.youtube.com/" class="buyButton">Traveler</a>
         </div>
         <div id="TierTwo">
             Silver tier members get kinda cool stuff
-            <button id="PriceButton" style="">
-                Learn more about silver tier
-            </button>
+            <a href="https://www.youtube.com/" class="buyButton">Adventurer</a>
         </div>
         <div id="TierThree">
             Gold tier members get cool stuff
-            <button id="PriceButton">
-                Learn more about gold tier
-            </button>
+            <a href="https://www.youtube.com/" class="buyButton">Globetrotter</a>
         </div>
     </div>
     <div onmouseout="document.getElementById('dropdownContent').style.width='0px';" onmouseover="document.getElementById('dropdownContent').style.width='250px'">
