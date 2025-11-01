@@ -2,11 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
     <link rel="stylesheet" href="../../CSS/css.css">
+    <script>
+        function openDropdown() {
+            const dropdown = document.getElementById('dropdownContent');
+            if (dropdown) {
+                dropdown.style.width = '250px';
+            }
+        }
+
+        function closeDropdown() {
+            const dropdown = document.getElementById('dropdownContent');
+            if (dropdown) {
+                dropdown.style.width = '0';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menu = document.getElementById('menu');
+
+            if (menu) {
+                menu.addEventListener('mouseover', openDropdown);
+                menu.addEventListener('mouseout', closeDropdown);
+            }
+        });
+    </script>
     <style>
+        body {
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+            background: linear-gradient(to bottom, #87ceeb, #01394c);
+            background-attachment: fixed;
+        }
+
+        .header {
+            background-color: #e6e6fa;
+            width: 100vw;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            box-sizing: border-box;
+            border-bottom: 3px solid #0086b3;
+        }
+
+        #headerTextPic {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 40px;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: Garamond, serif;
+            font-size: 90px;
+            color: #0086b3;
+            font-weight: 1500;
+            text-shadow: 2px 2px black;
+        }
+
+        #menu {
+            top: 20px;
+            right: 50px;
+            margin-left: auto;
+        }
+
+        #menuBar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 35px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            margin-top: -25px;
+            margin-right: 40px;
+        }
+
+        .blue-bar {
+            display: block;
+            width: 50px;
+            height: 6px;
+            background-color: #0086b3;
+            border-radius: 2px;
+            padding: 5px;
+            margin: 5px
+        }
+
+        #dropdownContent {
+            border-left: 5px solid #0086b3;
+            position: fixed;
+            top: 0;
+            right: -5px;
+            height: 100%;
+            width: 0;
+            background-color: #add8e6;
+            transition: width 0.3s;
+        }
+
+        .menu-links {
+            text-decoration: none;
+        }
+
+        .dropdown-buttons {
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 8%;
+            display: flex;
+            width: 87%;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(to bottom, #00bfff, #0086b3);
+            border: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-family: Garamond, serif;
+        }
+
+        #footer {
+            background-color: #012b39;
+            width: 100vw;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            box-sizing: border-box;
+            border-bottom: 3px solid #0086b3;
+        }
+
         html {
             font-size: 16px;
         }
+
         h1, h2 {
             text-align: center;
         }
@@ -19,8 +152,9 @@
             width: 10%;
             border: 10px solid #0099ff;
             padding: 20px 20px 50px 20px;
-            margin-left:0px;
+            margin-left: 0px;
             text-align: center;
+            border-radius: 12px
         }
 
         #TierTwo {
@@ -32,6 +166,7 @@
             border: 10px solid #0099ff;
             padding: 20px 20px 50px 20px;
             text-align: center;
+            border-radius: 12px
         }
 
         #TierThree {
@@ -43,6 +178,18 @@
             border: 10px solid #0099ff;
             padding: 20px 20px 50px 20px;
             text-align: center;
+            border-radius: 12px
+        }
+
+        #BronzeBox {
+            background-color: #9ed8ff;
+            top: 0px;
+            border: 10px solid #0099ff;
+            
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 300px;
+            display: flex;
         }
 
         .buyButton {
@@ -55,35 +202,70 @@
             color: white;
             text-decoration: none;
             border-radius: 4px;
-            font-size: 1.5vw;
-            text-align: center;
+            font-size: 1.4vw;
             display: flex;
             margin-left: auto;
             margin-right: auto;
             align-self: center;
+            text-align: center;
         }
     </style>
 </head>
-<body style="padding: 0; box-sizing: border-box; margin: 0; background: linear-gradient(to bottom, #87ceeb, #0086b3); background-attachment: fixed;">
-    <div style="background-color: #e6e6fa; width: 100vw; height: 150px; display: flex; justify-content: space-between;
-    align-items: center; padding: 0 30px; box-sizing: border-box; border-bottom: 3px solid #0086b3;">
-        <h1 style="text-align: center; font-family: 'Palatino', 'Palatino Linotype'; font-size: 90px; color: #0086b3; font-weight: 1500; text-shadow: 2px 2px black;"> DRONEYE </h1>
-        <div style="position: fixed; top: 20px; right: 50px; "
-             onmouseover="document.getElementById('dropdownContent').style.width='250px';">
-            <button style="display: flex; flex-direction: column; justify-content: space-between; width: 35px; height: 25px; background: transparent; border: none; cursor: pointer;">
-                <span style="display: block; width: 50px; height: 6px; background-color: white; border-radius: 2px; padding: 5px; margin: 5px"></span>
-                <span style="display: block; width: 50px; height: 6px; background-color: white; border-radius: 2px; padding: 5px; margin: 5px"></span>
-                <span style="display: block; width: 50px; height: 6px; background-color: white; border-radius: 2px; padding: 5px; margin: 5px"></span>
+<body>
+    <div class="header">
+        <div id="headerTextPic">
+            <h1> DRONEYE </h1>
+            <img src="../IMG_3008.PNG" alt="DronEye logo" width="150px" height="150px">
+        </div>
+        <div id="menu">
+            <button id="menuBar">
+                <span class="blue-bar"></span>
+                <span class="blue-bar"></span>
+                <span class="blue-bar"></span>
             </button>
+
+            <div id="dropdownContent">
+                <a href="About Us" class="menu-links" target="_blank">
+                    <button class="dropdown-buttons" data-key="about-us">
+                        About Us
+                    </button>
+                </a>
+
+                <a href="Pricing" class="menu-links" target="_blank">
+                    <button class="dropdown-buttons">
+                        Product Features
+                    </button>
+                </a>
+
+                <a href="About company" class="menu-links" target="_blank">
+                    <button class="dropdown-buttons">
+                        Pricing
+                    </button>
+                </a>
+                <a href="idk" class="menu-links" target="_blank">
+                    <button class="dropdown-buttons">
+                        Contact
+                    </button>
+                </a>
+
+                <a href="smth" class="menu-links" target="_blank">
+                    <button class="dropdown-buttons">
+                        Our Team
+                    </button>
+                </a>
+                <a class="menu-links" href="index" target="_blank">
+                    <img src="IMG_3008.PNG" alt="DronEye logo" height="250px" width="250px">
+                </a>
+            </div>
         </div>
     </div>
-    <h1>
-        PRICING PAGE
-    </h1>
     <h2>
-        Price will be a subscription service model with multiple tiers. (We can make varying coloured boxes depending on which tier of subscription is being displayed, as a design Idea)
+        PRICING PAGE
     </h2>
-    <div id="Pricings" style="position: relative;  width: 70%; padding: 100px; display: flex; margin-left: auto; margin-right: auto; align-self: center; font-family: Garamond; font-size: 120%">
+    <h3 style="text-shadow: 0.5px 0.5px black; margin-left: 20px; margin-right: 20px; color:white">
+        Price will be a subscription service model with multiple tiers. (We can make varying coloured boxes depending on which tier of subscription is being displayed, as a design Idea)
+    </h3>
+    <div id="Pricings" style="position: relative;  width: 70%; padding: 100px; display: flex; margin-left: auto; margin-right: auto; align-self: center; font-family: Garamond; font-size: 120%;">
         <div id="TierOne">
             Bronze tier members get ok stuff
             <a href="https://www.youtube.com/" class="buyButton">Traveler</a>
@@ -96,49 +278,10 @@
             Gold tier members get cool stuff
             <a href="https://www.youtube.com/" class="buyButton">Globetrotter</a>
         </div>
+        <div id="BronzeBox" style="position: absolute;">
+            <b>Traveler Tier members receive the following benefits:</b>
+        <div/>
     </div>
-    <div onmouseout="document.getElementById('dropdownContent').style.width='0px';" onmouseover="document.getElementById('dropdownContent').style.width='250px'">
-        <div id="dropdownContent" style="border-left: 5px solid #0086b3; position: fixed; top: 0; right: 0; height: 100%; width: 0; background-color: #add8e6; transition: width 0.3s;">
-            <a href="About Us" style="text-decoration: none; width: 80%; margin: 10px 0;">
-                <button style="margin: auto; margin-top: 10%; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;"
-                        onmouseover="this.style.backgroundColor='#145cae';"
-                        onmouseout="this.style.backgroundColor='#1f6fcf';">
-                    Home
-                </button>
-            </a>
-
-            <a href="Pricing" style="text-decoration: none; width: 80%; margin: 10px 0;">
-                <button style="margin: auto; margin-top: 10%; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;"
-                        onmouseover="this.style.backgroundColor='#145cae';"
-                        onmouseout="this.style.backgroundColor='#1f6fcf';">
-                    About
-                </button>
-            </a>
-
-            <a href="About company" style="text-decoration: none; width: 80%; margin: 10px 0;">
-                <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;"
-                        onmouseover="this.style.backgroundColor='#145cae';"
-                        onmouseout="this.style.backgroundColor='#1f6fcf';">
-                    Gallery
-                </button>
-            </a>
-
-            <a href="idk" style="text-decoration: none; width: 80%; margin: 10px 0;">
-                <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;"
-                        onmouseover="this.style.backgroundColor='#145cae';"
-                        onmouseout="this.style.backgroundColor='#1f6fcf';">
-                    Services
-                </button>
-            </a>
-
-            <a href="smth" style="text-decoration: none; width: 80%; margin: 10px 0;">
-                <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;"
-                        onmouseover="this.style.backgroundColor='#145cae';"
-                        onmouseout="this.style.backgroundColor='#1f6fcf';">
-                    Contact
-                </button>
-            </a>
-        </div>
-    </div>
+    
 </body>
 </html>
