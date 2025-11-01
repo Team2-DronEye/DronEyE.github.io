@@ -1,72 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <body  style="padding: 0; box-sizing: border-box; margin: 0; background: linear-gradient(to bottom, #87ceeb, #0086b3); background-attachment: fixed;">
-<div class = "header" style="background-color: #e6e6fa; width: 100vw; height: 150px; display: flex; justify-content: center;  
-    align-items: center; padding: 0 30px; box-sizing: border-box; border-bottom: 3px solid #0086b3;">
-    <div id="headerTextPic" style = "display:flex; align-items: center; justify-content: flex-start; padding: 10px 40px;">
-        <h1 style="margin: 0; font-family: 'Palatino', 'Palatino Linotype'; font-size: 90px; color: #0086b3; font-weight: 1500; text-shadow: 2px 2px black;"> DRONEYE </h1>
-        <img src = "IMG_3008.PNG" alt = "DronEye logo" width = "150px" height="150px" style="margin-left: 10px;">
-    </div>
-<div style= "position: fixed; top: 20px; right: 50px; " 
-    onmouseover="document.getElementById('dropdownContent').style.width='250px';"
-    onmouseout="document.getElementById('dropdownContent').style.width='0';">
-  <button style="display: flex; flex-direction: column; justify-content: space-between; width: 35px; height: 25px; background: transparent; border: none; cursor: pointer;">
-        <span style="display: block; width: 50px; height: 6px; background-color: #0086b3; border-radius: 2px; padding: 5px; margin: 5px"></span>
-        <span style="display: block; width: 50px; height: 6px; background-color: #0086b3; border-radius: 2px; padding: 5px; margin: 5px"></span>
-        <span style="display: block; width: 50px; height: 6px; background-color: #0086b3; border-radius: 2px; padding: 5px; margin: 5px"></span>
-    </button>
-
-  <div id="dropdownContent" style="border-left: 5px solid #0086b3; position: fixed; top: 0; right: -5px; height: 100%; width: 0; background-color: #add8e6; transition: width 0.3s;">
-    <a href="About Us" style="text-decoration: none; width: 80%; margin: 10px 0;">
-        <button style="margin: auto; margin-top: 10%; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
-            About Us</button>
-      </a>
-
-      <a href="Pricing" style="text-decoration: none; width: 80%; margin: 10px 0;">
-        <button style="margin: auto; margin-top: 10%; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
-            Product Features</button>
-      </a>
-
-      <a href="About company" style="text-decoration: none; width: 80%; margin: 10px 0;">
-        <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
-            Pricing</button>
-      </a>
-
-      <a href="idk" style="text-decoration: none; width: 80%; margin: 10px 0;">
-        <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
-            Contact</button>
-      </a>
-
-      <a href="smth" style="text-decoration: none; width: 80%; margin: 10px 0;">
-        <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
-            Our Team</button>
-      </a>
-      <a href="index" style="text-decoration: none; width: 80%; margin: 10px 0;">
-        <img src = "IMG_3008.PNG" alt = "DronEye logo" height = "250px" width = "250px"
-        onmouseover="this.style.backgroundColor='#145cae';"
-        onmouseout="this.style.backgroundColor='#1f6fcf';">
-      </a>
-      </div>
-  </div>
-</div>
-</body>
-  <link rel="stylesheet" href="../CSS/css.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Team Page</title>
   <style>
-  
-
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       color: white;
+      background: linear-gradient(to bottom, #87ceeb, #0086b3);
+      background-attachment: fixed;
+      padding-top: 150px; /* Space for fixed header */
+    }
 
-      background: linear-gradient(-45deg, #87ceeb, #0099ff, #87ceeb, #0099ff);
-      background-size: 400% 400%;
-      animation: gradientShift  300s ease infinite;
+    .header {
+      background-color: #e6e6fa;
+      width: 100%;
+      height: 150px;
+      display: flex;
+      justify-content: space-between;  
+      align-items: center;
+      padding: 0 30px;
+      box-sizing: border-box;
+      border-bottom: 3px solid #0086b3;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    #headerTextPic {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: fixed;
+      left: 30px;
+      top: 0;
+      height: 150px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-family: 'Palatino', 'Palatino Linotype';
+      font-size: 90px;
+      color: #0086b3;
+      font-weight: bold;
+      text-shadow: 2px 2px black;
+    }
+
+    .header img {
+      margin-left: 10px;
+    }
+
+    .dropdown-container {
+      position: fixed;
+      top: 20px;
+      right: 50px;
+      z-index: 1001;
+    }
+
+    .hamburger-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50px;
+      height: 40px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+      position: relative;
+      padding: 8px;
+    }
+
+    .hamburger-btn span {
+      display: block;
+      width: 100%;
+      height: 6px;
+      background-color: #0086b3;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger-btn:hover span {
+      background-color: #005a87;
+    }
+
+    #dropdownContent {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 0;
+      background-color: #add8e6;
+      transition: width 0.3s ease;
+      overflow: hidden;
+      z-index: 1000;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-container:hover #dropdownContent {
+      width: 280px;
+    }
+
+    .dropdown-links-container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .dropdown-link {
+      text-decoration: none;
+      width: 100%;
+    }
+
+    .dropdown-link button {
+      width: 100%;
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+      background: linear-gradient(to bottom, #00bfff, #0086b3);
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .dropdown-link button:hover {
+      background: linear-gradient(to bottom, #0086b3, #00bfff);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-logo {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .dropdown-logo img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-logo img:hover {
+      transform: scale(1.05);
     }
 
     /* Background animation */
@@ -82,7 +166,7 @@
       background-color: rgba(0, 0, 0, 0.2);
     }
 
-    h1 {
+    .center-text h1 {
       font-size: 48px;
       font-weight: bold;
       color: #ffffff;
@@ -103,13 +187,16 @@
       color: white;
       flex-wrap: wrap;
       background: linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.7));
-      margin-bottom: 10px;
+      margin: 20px;
       border-radius: 10px;
       transition: background 0.5s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .team-member:hover {
       background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .member-info {
@@ -143,7 +230,7 @@
     .more-btn {
       margin-top: 10px;
       background-color: #0099ff;
-      color: rgb(0, 0, 0);
+      color: white;
       border: none;
       padding: 8px 16px;
       border-radius: 5px;
@@ -162,9 +249,52 @@
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 60px;
+      }
+      
+      .header img {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .dropdown-container:hover #dropdownContent {
+        width: 250px;
+      }
     }
 
     @media (max-width: 600px) {
+      body {
+        padding-top: 200px;
+      }
+      
+      .header {
+        flex-direction: column;
+        height: 200px;
+        padding: 10px;
+      }
+      
+      #headerTextPic {
+        position: relative;
+        left: 0;
+        height: auto;
+      }
+      
+      .header h1 {
+        font-size: 48px;
+      }
+      
+      .dropdown-container {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+      }
+      
       .team-member {
         flex-direction: column;
         text-align: center;
@@ -177,13 +307,59 @@
     }
   </style>
 </head>
+<body>
+  <div class="header">
+    <div id="headerTextPic">
+      <h1>DRONEYE</h1>
+      <img src="https://via.placeholder.com/150/0086b3/ffffff?text=LOGO" alt="DronEye logo" width="150px" height="150px">
+    </div>
+
+    <div class="dropdown-container">
+      <button class="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="dropdownContent">
+        <div class="dropdown-links-container">
+          <a href="#" class="dropdown-link">
+            <button>About Us</button>
+          </a>
+
+          <a href="#" class="dropdown-link">
+            <button>Product Features</button>
+          </a>
+
+          <a href="#" class="dropdown-link">
+            <button>Pricing</button>
+          </a>
+
+          <a href="#" class="dropdown-link">
+            <button>Contact</button>
+          </a>
+
+          <a href="#" class="dropdown-link">
+            <button>Our Team</button>
+          </a>
+        </div>
+        
+        <div class="dropdown-logo">
+          <a href="#">
+            <img src="https://via.placeholder.com/200/0086b3/ffffff?text=LOGO" alt="DronEye logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="center-text">
     <h1>Team Page</h1>
     <p class="intro">Welcome to our official team web page</p>
   </div>
 
   <div class="team-member member-1">
-    <img class="profile-pic" src="https://via.placeholder.com/100" alt="Member 1 Photo">
+    <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M1" alt="Member 1 Photo">
     <div class="member-info">
       <div class="member-name">Member 1</div>
       <div class="description">Description</div>
@@ -195,7 +371,7 @@
   </div>
 
   <div class="team-member member-2">
-    <img class="profile-pic" src="https://via.placeholder.com/100" alt="Member 2 Photo">
+    <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M2" alt="Member 2 Photo">
     <div class="member-info">
       <div class="member-name">Member 2</div>
       <div class="description">Description</div>
@@ -207,19 +383,19 @@
   </div>
 
   <div class="team-member member-3">
-    <img class="profile-pic" src="https://via.placeholder.com/100" alt="Member 3 Photo">
+    <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=IS" alt="Member 3 Photo">
     <div class="member-info">
       <div class="member-name">Ilyes Serir</div>
-      <div class="description">A software engineering student that has for goal to become </div>
+      <div class="description">A software engineering student that has for goal to become a full-stack developer</div>
       <button class="more-btn" onclick="toggleMore('more3')">More Info</button>
       <div class="more-info" id="more3">
-        This is a deeper description about Member 3. Include any unique skills or personality traits.
+        Ilyes is passionate about web development and has experience with JavaScript, React, Node.js, and various databases. He enjoys solving complex problems and creating user-friendly applications.
       </div>
     </div>
   </div>
 
   <div class="team-member member-4">
-    <img class="profile-pic" src="https://via.placeholder.com/100" alt="Member 4 Photo">
+    <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M4" alt="Member 4 Photo">
     <div class="member-info">
       <div class="member-name">Member 4</div>
       <div class="description">Description</div>
@@ -231,7 +407,7 @@
   </div>
 
   <div class="team-member member-5">
-    <img class="profile-pic" src="https://via.placeholder.com/100" alt="Member 5 Photo">
+    <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M5" alt="Member 5 Photo">
     <div class="member-info">
       <div class="member-name">Member 5</div>
       <div class="description">Description</div>
@@ -243,7 +419,7 @@
   </div>
 
   <div class="team-member member-6">
-    <img class="profile-pic" src="https://via.placeholder.com/100" alt="Member 6 Photo">
+    <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M6" alt="Member 6 Photo">
     <div class="member-info">
       <div class="member-name">Member 6</div>
       <div class="description">Description</div>
@@ -253,6 +429,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Adding more content to demonstrate the fixed header -->
+  <div style="height: 1000px;"></div>
 
   <script>
     function toggleMore(id) {
