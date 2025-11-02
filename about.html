@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | DronEye Journey</title>
+    <style>
+
+        body {
+            font-family: 'Arimo', sans-serif;
+            margin: 0;
+            text-align: center;
+            background: linear-gradient(to bottom, #87ceeb, #01394c);
+        }
+
+        .header {
+            background-color: #e6e6fa;
+            width: 100vw;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            box-sizing: border-box;
+            border-bottom: 3px solid #0086b3;
+            position: relative;
+        }
+
+        #headerTextPic {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #headerTextPic h1 {
+            font-family: 'Palatino', 'Palatino Linotype', serif;
+            font-size: 90px;
+            color: #0086b3;
+            font-weight: 1500;
+            text-shadow: 2px 2px black;
+            margin: 0;
+        }
+
+        #headerTextPic img {
+            width: 180px;
+            height: 180px;
+            margin-top: 20px;
+        }
+
+        #menu {
+            position: fixed;
+            top: 20px;
+            right: 50px;
+        }
+
+        #menuBar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 35px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .blue-bar {
+            display: block;
+            width: 50px;
+            height: 6px;
+            background-color: white;
+            border-radius: 2px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #dropdownContent {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 0;
+            background-color: aliceblue;
+            overflow-x: hidden;
+            transition: width 0.3s;
+            z-index: 999;
+        }
+
+        #menu:hover #dropdownContent {
+            width: 250px;
+        }
+
+        .menu-links {
+            text-decoration: none;
+            width: 80%;
+            margin: 10px 0;
+            display: block;
+        }
+
+        .menu-button {
+            width: 100%;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(to bottom, #00bfff, #0086b3);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .menu-button:hover {
+            background-color: #145cae;
+        }
+
+        h1#aboutTitle {
+            font-size: 90px;
+            color: #003366;
+            margin-top: 50px;
+        }
+
+        h1#tiersTitle {
+            font-size: 60px;
+            color: #00bfff;
+        }
+
+        h2 {
+            color: #006699;
+        }
+
+        p.info-text {
+            color: #001a33;  
+            font-size: 18px;
+            margin: 30px auto;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        .tiers {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: nowrap;
+            margin: 60px auto;
+            max-width: 700px;
+        }
+
+        .tier {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 280px;        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 320px;
+            box-sizing: border-box;     
+        }
+
+        .tier h3.bronze {
+            color: #cd7f32;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .tier h3.silver {
+            color: #c0c0c0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .tier h3.gold {
+            color: #ffd700;
+            text-shadow: 1px 1px black;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            background-color: #00bfff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0086b3;
+        }
+
+        footer {
+            background-color: #add8e6;
+            padding: 20px;
+            margin-top: 50px;
+            color: #003366;
+            font-size: 14px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="headerTextPic">
+            <h1>DRONEYE</h1> 
+            <img src="IMG_3008.PNG" alt="DronEye Logo">
+        </div>
+        <div id="menu">
+            <button id="menuBar">
+                <span class="blue-bar"></span>
+                <span class="blue-bar"></span>
+                <span class="blue-bar"></span>
+            </button>
+
+            <div id="dropdownContent">
+                <a href="index.html" class="menu-links"><button class="menu-button">Home</button></a>
+                <a href="about.html" class="menu-links"><button class="menu-button">About</button></a>
+                <a href="features.html" class="menu-links"><button class="menu-button">Product Features</button></a>
+                <a href="pricing.html" class="menu-links"><button class="menu-button">Pricing</button></a>
+                <a href="contact.html" class="menu-links"><button class="menu-button">Contact</button></a>
+                <a href="team.html" class="menu-links"><button class="menu-button">Our Team</button></a>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="aboutTitle">ABOUT</h1>
+    <h2>Explore the world through the comfort of your home!</h2>
+    <p class="info-text">
+        We believe that everyone should have access to real place views. That's why we created <strong>DronEye</strong>,
+        a platform that lets you experience real destinations through a live drone. 
+        With our subscription service, you can explore anywhere in the world right from your home, 
+        connect with other users, and see the world from a whole new perspective.
+    </p>
+
+    <h2>Want to know how it works?</h2>
+    <p class="info-text">
+        Simply choose your membership plan, select a destination, and enjoy breathtaking live views from our drones in real time. 
+        Whether you're discovering cities, beaches, or hidden landscapes, <span class="bold">DronEye</span> brings the adventure to you.
+    </p>
+
+    <a href="productFeatures (2).html" class="btn">Get Started</a>
+
+    <section id="pricing">
+        <h1 id="tiersTitle">Membership Tiers</h1>
+        <div class="tiers">
+            <div class="tier">
+                <h3 class="bronze">Bronze</h3>
+                <p>Perfect for casual explorers who want to see the world freely. Access popular destinations and enjoy limited live drone sessions monthly.</p>
+                <a href="Pricing Page (3).html" class="btn">Choose Bronze</a>
+            </div>
+
+            <div class="tier">
+                <h3 class="silver">Silver</h3>
+                <p>Step up your journey with high-quality live drone views, early access to new destinations, and invites to exciting community events around the globe.</p>
+                <a href="Pricing Page (3).html" class="btn">Choose Silver</a>
+            </div>
+
+            <div class="tier">
+                <h3 class="gold">Gold</h3>
+                <p>Go all-in with full, unlimited access to every destination. Enjoy premium live drone quality and exclusive experiences that redefine travel.</p>
+                <a href="Pricing Page (3).html" class="btn">Choose Gold</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>DronEye</strong> Journey &copy; 2025 | Experience the world from above</p>
+    </footer>
+</body>
+</html>
