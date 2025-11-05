@@ -231,7 +231,8 @@
     }
   </style>
 </head>
-<body style="padding: 170px 0 0 0; box-sizing: border-box; margin: 0; background: linear-gradient(to bottom, #87ceeb, #0086b3); background-attachment: fixed;">
+</html>
+</body> style="padding: 170px 0 0 0; box-sizing: border-box; margin: 0; background: linear-gradient(to bottom, #87ceeb, #0086b3); background-attachment: fixed;">
 <div class="header" style="background-color: #e6e6fa; width: 100vw; height: 150px; display: flex; justify-content: center; align-items: center; padding: 0 30px; box-sizing: border-box; border-bottom: 3px solid #0086b3;">
   <div id="headerTextPic" style="display:flex; align-items: center; justify-content: flex-start; padding: 10px 40px;">
     <h1 style="margin: 0; font-family: 'Palatino', 'Palatino Linotype'; font-size: 90px; color: #0086b3; font-weight: 1500; text-shadow: 2px 2px black;"> DRONEYE </h1>
@@ -246,7 +247,7 @@
       <span style="display: block; width: 50px; height: 6px; background-color: #0086b3; border-radius: 2px; padding: 5px; margin: 5px"></span>
     </button>
 
-    <div id="dropdownContent" style="border-left: 5px solid #0086b3; position: fixed; top: 0; right: -5px; height: 100%; width: 0; background-color: #add8e6; transition: width 0.3s;">
+    <div id="dropdownContent" style="border-left: 5px solid #0086b3;position: fixed; top: 0; right: -5px; height: 100%; width: 0; background-color: #add8e6; transition: width 0.3s;">
       <a href="About Us" style="text-decoration: none; width: 80%; margin: 10px 0;">
         <button style="margin: auto; margin-top: 10%; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
           About Us</button>
@@ -352,6 +353,49 @@
     </div>
   </div>
 </div>
+<div id="dropdownContent" onmouseout="document.getElementById('dropdownContent').style.width='0px'" onmouseover="document.getElementById('dropdownContent').style.width='250px';">
+            <a href="../AboutHtml.html" class="menu-links" target="_blank">
+                <button class="dropdown-buttons" data-key="about-us">
+                    About Us
+                </button>
+            </a>
+
+            <a href="../Product features/productFeatures.html" class="menu-links" target="_blank">
+                <button class="dropdown-buttons" data-key="product-features">
+                    Product Features
+                </button>
+            </a>
+
+            <a href="Pricing Page.html" class="menu-links" target="_blank">
+                <button class="dropdown-buttons" data-key="pricing">
+                    Pricing
+                </button>
+            </a>
+
+            <a href="../Contact Page/contact.html" class="menu-links" target="_blank">
+                <button class="dropdown-buttons" data-key="contact">
+                    Contact
+                </button>
+            </a>
+
+            <a href="../Team Page.html" class="menu-links" target="_blank">
+                <button class="dropdown-buttons" data-key="our-team">
+                    Our Team
+                </button>
+            </a>
+            <a class="menu-links" href="index" target="_blank">
+                <img src="../IMG_3008.PNG" alt="DronEye logo" height="250px" width="250px">
+            </a>
+        </div>
+        <div id="footer">
+            <button id="lang-toggle">Français</button>
+            Contact Us <br> something
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:647-999-9999">647-999-9999</a>
+            </p>email, company name
+            <p id="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
+        </div>
 
 <script>
   function toggleMore(id) {
