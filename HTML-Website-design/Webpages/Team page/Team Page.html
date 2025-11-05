@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Page</title>
+  <link rel="stylesheet" href="styling.css">
+  <script src="javascriptSideBar.js" defer></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      background: linear-gradient(to bottom, #87ceeb, #0086b3);
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 150px;
+      background-color: #e6e6fa;
+      border-bottom: 3px solid #0086b3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 30px;
+      box-sizing: border-box;
+      z-index: 1000;
+    }
+
+    #headerTextPic {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 40px;
+      position: fixed;
+      top: 0;
+      left: 30px;
+    }
+
+    #headerTextPic h1 {
+      margin: 0;
+      font-family: 'Palatino', 'Palatino Linotype';
+      font-size: 90px;
+      color: #0086b3;
+      font-weight: 900;
+      text-shadow: 2px 2px black;
+    }
+
+    .menu {
+      position: fixed;
+      top: 20px;
+      right: 50px;
+      z-index: 1500;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 35px;
+      height: 25px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 50px;
+      height: 6px;
+      background-color: #0086b3;
+      border-radius: 2px;
+      margin: 5px;
+    }
+
+    #dropdownContent {
+      border-left: 5px solid #0086b3;
+      position: fixed;
+      top: 0;
+      right: -5px;
+      height: 100%;
+      width: 0;
+      background-color: #add8e6;
+      transition: width 0.3s;
+      overflow: hidden;
+      z-index: 1400;
+    }
+
+    #dropdownContent a {
+      text-decoration: none;
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    #dropdownContent button {
+      display: flex;
+      width: 87%;
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+      background: linear-gradient(to bottom, #00bfff, #0086b3);
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s;
+      margin: 8% auto;
+      justify-content: center;
+    }
+
+    #dropdownContent img {
+      display: block;
+      margin: 30px auto;
+      height: 250px;
+      width: 250px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    #dropdownContent img:hover {
+      background-color: #145cae;
+    }
+
+    .center-text {
+      text-align: center;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .center-text h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #0099ff;
+    }
+
+    .intro {
+      font-size: 20px;
+      color: #e0e7ff;
+      margin-bottom: 20px;
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      flex-wrap: wrap;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.7));
+      margin: 20px;
+      border-radius: 10px;
+      transition: background 0.5s ease, transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member:hover {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .member-info {
+      margin-left: 20px;
+      flex: 1;
+    }
+
+    .member-name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #00b0ff;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #000000;
+    }
+
+    .more-info {
+      display: none;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #000000;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .more-btn {
+      margin-top: 10px;
+      background-color: #0099ff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .more-btn:hover {
+      background-color: #007acc;
+    }
+
+    @media (max-width: 768px) {
+      .team-member {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .member-info {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+</html>
+</body style="padding: 170px 0 0 0; box-sizing: border-box; margin: 0; background: linear-gradient(to bottom, #87ceeb, #0086b3); background-attachment: fixed;">
+<div class="header" style="background-color: #e6e6fa; width: 100vw; height: 150px; display: flex; justify-content: center; align-items: center; padding: 0 30px; box-sizing: border-box; border-bottom: 3px solid #0086b3;">
+  <div id="headerTextPic" style="display:flex; align-items: center; justify-content: flex-start; padding: 10px 40px;">
+    <h1 style="margin: 0; font-family: 'Palatino', 'Palatino Linotype'; font-size: 90px; color: #0086b3; font-weight: 1500; text-shadow: 2px 2px black;"> DRONEYE </h1>
+    <img src="IMG_3008.PNG" alt="DronEye logo" width="150px" height="150px" style="margin-left: 10px;">
+  </div>
+  <div style="position: fixed; top: 20px; right: 50px;"
+    onmouseover="document.getElementById('dropdownContent').style.width='250px';"
+    onmouseout="document.getElementById('dropdownContent').style.width='0';">
+    <button style="display: flex; flex-direction: column; justify-content: space-between; width: 35px; height: 25px; background: transparent; border: none; cursor: pointer;">
+      <span style="display: block; width: 50px; height: 6px; background-color: #0086b3; border-radius: 2px; padding: 5px; margin: 5px"></span>
+      <span style="display: block; width: 50px; height: 6px; background-color: #0086b3; border-radius: 2px; padding: 5px; margin: 5px"></span>
+      <span style="display: block; width: 50px; height: 6px; background-color: #0086b3; border-radius: 2px; padding: 5px; margin: 5px"></span>
+    </button>
+
+    <div id="dropdownContent" style="border-left: 5px solid #0086b3;position: fixed; top: 0; right: -5px; height: 100%; width: 0; background-color: #add8e6; transition: width 0.3s;">
+      <a href="About Us" style="text-decoration: none; width: 80%; margin: 10px 0;">
+        <button style="margin: auto; margin-top: 10%; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
+          About Us</button>
+      </a>
+      <a href="Pricing" style="text-decoration: none; width: 80%; margin: 10px 0;">
+        <button style="margin: auto; margin-top: 10%; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
+          Product Features</button>
+      </a>
+      <a href="About company" style="text-decoration: none; width: 80%; margin: 10px 0;">
+        <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
+          Pricing</button>
+      </a>
+      <a href="idk" style="text-decoration: none; width: 80%; margin: 10px 0;">
+        <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
+          Contact</button>
+      </a>
+      <a href="smth" style="text-decoration: none; width: 80%; margin: 10px 0;">
+        <button style="margin: auto; margin-bottom: 8%; display: flex; width: 87%; padding: 15px; font-size: 20px; color: white; background: linear-gradient(to bottom, #00bfff, #0086b3); border: none; border-radius: 10px; transition: 0.3s;">
+          Our Team</button>
+      </a>
+      <a href="index" style="text-decoration: none; width: 80%; margin: 10px 0;">
+        <img src="IMG_3008.PNG" alt="DronEye logo" height="250px" width="250px"
+        onmouseover="this.style.backgroundColor='#145cae';"
+        onmouseout="this.style.backgroundColor='#1f6fcf';">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="center-text">
+  <h1>Team Page</h1>
+  <p class="intro">Welcome to our official team web page</p>
+</div>
+
+<div class="team-member">
+  <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M1" alt="Member 1 Photo">
+  <div class="member-info">
+    <div class="member-name">Member 1</div>
+    <div class="description">Frontend developer with a passion for design and UX.</div>
+    <button class="more-btn" onclick="toggleMore('more1')">More Info</button>
+    <div class="more-info" id="more1">
+      Experienced in HTML, CSS, and JavaScript frameworks. Loves creating clean, responsive layouts.
+    </div>
+  </div>
+</div>
+
+<div class="team-member">
+  <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M2" alt="Member 2 Photo">
+  <div class="member-info">
+    <div class="member-name">Member 2</div>
+    <div class="description">Backend engineer ensuring smooth data handling.</div>
+    <button class="more-btn" onclick="toggleMore('more2')">More Info</button>
+    <div class="more-info" id="more2">
+      Skilled in Node.js, databases, and server-side logic. Focused on performance and scalability.
+    </div>
+  </div>
+</div>
+
+<div class="team-member">
+  <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=IS" alt="Ilyes Serir">
+  <div class="member-info">
+    <div class="member-name">Ilyes Serir</div>
+    <div class="description">Software engineering student aiming to become a full-stack developer.</div>
+    <button class="more-btn" onclick="toggleMore('more3')">More Info</button>
+    <div class="more-info" id="more3">
+      Passionate about web development and user-friendly apps. Experienced with React, Node.js, and MongoDB.
+    </div>
+  </div>
+</div>
+
+<div class="team-member">
+  <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M4" alt="Member 4 Photo">
+  <div class="member-info">
+    <div class="member-name">Member 4</div>
+    <div class="description">Cloud infrastructure specialist.</div>
+    <button class="more-btn" onclick="toggleMore('more4')">More Info</button>
+    <div class="more-info" id="more4">
+      Expert in AWS and Azure deployment, with experience in containerization and automation tools.
+    </div>
+  </div>
+</div>
+
+<div class="team-member">
+  <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M5" alt="Member 5 Photo">
+  <div class="member-info">
+    <div class="member-name">Member 5</div>
+    <div class="description">Project manager coordinating team efforts.</div>
+    <button class="more-btn" onclick="toggleMore('more5')">More Info</button>
+    <div class="more-info" id="more5">
+      Keeps the team on track, manages deadlines, and ensures smooth communication and progress.
+    </div>
+  </div>
+</div>
+
+<div class="team-member">
+  <img class="profile-pic" src="https://via.placeholder.com/100/0086b3/ffffff?text=M6" alt="Member 6 Photo">
+  <div class="member-info">
+    <div class="member-name">Member 6</div>
+    <div class="description">QA engineer maintaining top-notch product quality.</div>
+    <button class="more-btn" onclick="toggleMore('more6')">More Info</button>
+    <div class="more-info" id="more6">
+      Skilled in testing frameworks and automation tools to deliver bug-free, polished applications.
+    </div>
+  </div>
+</div>
+<div id = "footer">
+    <button id="lang-toggle">Français</button>
+    Contact Us <br> something
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:647-999-9999">647-999-9999</a>
+    </p>email, company name
+</div>
+</div>
+<script src="commonJS.js"></script>
+</body>
+</html>
