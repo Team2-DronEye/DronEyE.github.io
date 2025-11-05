@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href="styling.css">
-    <script src="javascriptSideBar.js" defer></script>
+    <link rel = "stylesheet" href="../commonCSS.css">
+    <script src="javascriptStuff.js" defer></script>
+
+    <!-- this does NOT work with the current commonJS file, I don't really know why -->
+    <script src="../commonJS.js" defer></script>
 </head>
 <body>
     <div class = "header">
@@ -19,7 +23,7 @@
             </button>
 
             <div id="dropdownContent">
-                <a href="../About - html and css.." class="menu-links" target="_blank">
+                <a href="../About page/AboutHtml.html" class="menu-links" target="_blank">
                     <button class="dropdown-buttons" data-key="about-us">
                         About Us
                     </button>
@@ -79,13 +83,23 @@
         <div class="features">
             <h2>Why Choose DronEyE?</h2>
                 <ul>
-                    <li><strong>Live verification:</strong> See realntime footage to confirm if a location matches reviews and expectations.</li>
+                    <li><strong>Live verification:</strong> See real time footage to confirm if a location matches reviews and expectations.</li>
                     <li><strong>Unbiased insights:</strong> Avoid outdated or misleading info with direct visual access to your destination.</li>
                     <li><strong>Digital travel:</strong> Explore cities and landmarks from home, saving time and money.</li>
                     <li><strong>Remote connection:</strong> Stay in touch with loved ones or scout areas even when you can’t be there in person.</li>
                 </ul>
             </ul>
         </div>
+    </div>
+
+    <div id="footer">
+        <button id="lang-toggle">Français</button>
+        Contact Us <br> something
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:647-999-9999">647-999-9999</a>
+        </p>email, company name
+        <p id="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
     </div>
 </body>
 </html>
