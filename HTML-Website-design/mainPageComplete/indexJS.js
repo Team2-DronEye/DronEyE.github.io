@@ -45,9 +45,9 @@ const translations = {
         "button_text": "Français",
         "contact-us": "Contact Us",
         "copyright": "Copyright© 2025 DronEye. All rights reserved.",
-        "box1-back": 'Check out our <a href = "">Pricing</a> page!',
+        "box1-back": 'Check out our <a href = "C:\Users\rkova\Desktop\Droneye Proj\DronEyE.github.io\HTML-Website-design\Webpages\Pricing page\Pricing Page.html">Pricing</a> page!',
         "box2-back": 'Check out our <a href = "">Product Features</a> page!',
-        "box3-back": 'Check out our <a href = "">About Us</a> page!'
+        "box3-back": 'Check out our <a href = "C:\Users\rkova\Desktop\Droneye Proj\DronEyE.github.io\HTML-Website-design\Webpages\About page\AboutHtml.html">About Us</a> page!'
 
     },
     "fr": {
@@ -85,9 +85,9 @@ const translations = {
         "button_text": "English",
         "contact-us": "Contactez-nous",
         "copyright": "Droit d’auteur© 2025 DronEye. Tous droits réservés.",
-        "box1-back": 'Visitez notre <a href = "">Tarifs</a> page!',
+        "box1-back": 'Visitez notre <a href = "C:\Users\rkova\Desktop\Droneye Proj\DronEyE.github.io\HTML-Website-design\Webpages\Pricing page\Pricing Page.html">Tarifs</a> page!',
         "box2-back": 'Visitez notre <a href = "">Fonctionnalités</a> page!',
-        "box3-back": 'Visitez notre <a href = "">À propos</a> page!'
+        "box3-back": 'Visitez notre <a href = "C:\Users\rkova\Desktop\Droneye Proj\DronEyE.github.io\HTML-Website-design\Webpages\About page\AboutHtml.html">À propos</a> page!'
     }
 };
 
