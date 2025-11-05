@@ -1,0 +1,221 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      background: linear-gradient(to bottom, #87ceeb, #0086b3);
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 150px;
+      background-color: #e6e6fa;
+      border-bottom: 3px solid #0086b3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 30px;
+      box-sizing: border-box;
+      z-index: 1000;
+    }
+
+    #headerTextPic {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 40px;
+      position: fixed;
+      top: 0;
+      left: 30px;
+    }
+
+    #headerTextPic h1 {
+      margin: 0;
+      font-family: 'Palatino', 'Palatino Linotype';
+      font-size: 90px;
+      color: #0086b3;
+      font-weight: 900;
+      text-shadow: 2px 2px black;
+    }
+
+    .menu {
+      position: fixed;
+      top: 20px;
+      right: 50px;
+      z-index: 1500;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 35px;
+      height: 25px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 50px;
+      height: 6px;
+      background-color: #0086b3;
+      border-radius: 2px;
+      margin: 5px;
+    }
+
+    #dropdownContent {
+      border-left: 5px solid #0086b3;
+      position: fixed;
+      top: 0;
+      right: -5px;
+      height: 100%;
+      width: 0;
+      background-color: #add8e6;
+      transition: width 0.3s;
+      overflow: hidden;
+      z-index: 1400;
+    }
+
+    #dropdownContent a {
+      text-decoration: none;
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    #dropdownContent button {
+      display: flex;
+      width: 87%;
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+      background: linear-gradient(to bottom, #00bfff, #0086b3);
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s;
+      margin: 8% auto;
+      justify-content: center;
+    }
+
+    #dropdownContent img {
+      display: block;
+      margin: 30px auto;
+      height: 250px;
+      width: 250px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    #dropdownContent img:hover {
+      background-color: #145cae;
+    }
+
+    .center-text {
+      text-align: center;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .center-text h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #0099ff;
+    }
+
+    .intro {
+      font-size: 20px;
+      color: #e0e7ff;
+      margin-bottom: 20px;
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      flex-wrap: wrap;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.7));
+      margin: 20px;
+      border-radius: 10px;
+      transition: background 0.5s ease, transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member:hover {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .member-info {
+      margin-left: 20px;
+      flex: 1;
+    }
+
+    .member-name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #00b0ff;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #000000;
+    }
+
+    .more-info {
+      display: none;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #000000;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .more-btn {
+      margin-top: 10px;
+      background-color: #0099ff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .more-btn:hover {
+      background-color: #007acc;
+    }
+
+    @media (max-width: 768px) {
+      .team-member {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .member-info {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+    }
