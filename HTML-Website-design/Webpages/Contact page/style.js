@@ -24,3 +24,82 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+const translations = {
+    "en": {
+        "about-us": "About Us",
+        "product-features": "Product Features",
+        "pricing": "Pricing",
+        "contact": "Contact",
+        "our-team": "Our Team",
+        "name" : "Name",
+        "Email": "Email",
+        "Contents": "Contents",
+        "Submit" : "Submit",
+        "Contact Us":"Contact Us",
+        "reserved" : "All rights reserved",
+        "email-example":"email@example.com",
+        "company": "Company Name",
+        "building": "Somewhere Building xF"
+
+        },
+        
+    "fr": {
+        "welcome-header": "Bienvenue chez DronEye",
+        "about-us": "À propos de nous",
+        "product-features": "Produit caractéristiques",
+        "pricing": "Tarifs",
+        "contact": "Contact",
+        "our-team": "Notre équipe",
+        "name" :"Nom",
+        "Email" :"Courriel",
+        "Contents":"Contenu",
+        "Submit": "Soumettre",
+        "Contact Us":"Contactez-nous",
+        "reserved": "Tous droits réservés",
+        "button_text": "English",
+        "email-example":"courriel@example.com",
+        "company": "Nom de l'entreprise",
+        "building": "Somewhere Bâtiment xF",
+        }
+};
+
+function translatePage(lang) {
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        
+        if (translations[lang] && translations[lang][key]) {
+            if (element.tagName.toLowerCase() === "input" && element.type === "submit"){
+                element.value = translations[lang][key];
+            } else{
+            element.innerHTML = translations[lang][key]}
+        }
+    });
+
+    const toggleButton = document.getElementById('lang-toggle');
+    if (lang === "en"){
+        toggleButton.textContent = "Français";
+    } else {
+        toggleButton.textContent = "English";
+    }
+
+    /*
+    if (translations[lang] && translations[lang]['button_text']) {
+        toggleButton.textContent = translations[lang]['button_text'];
+    }*/
+    
+    document.getElementById('translatable-content').setAttribute('lang', lang);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    translatePage('en'); 
+
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+        const contentDiv = document.getElementById('translatable-content');
+        let currentLang = contentDiv.getAttribute('lang');
+        
+        const newLang = (currentLang === 'en') ? 'fr' : 'en';
+
+        translatePage(newLang);
+    });
+});
