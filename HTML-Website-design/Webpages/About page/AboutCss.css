@@ -79,7 +79,6 @@ body {
 }
 
 #menu:hover #dropdownContent {
-    width: 250px;
 }
 
 .menu-links {
@@ -147,24 +146,25 @@ p.info-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    height: 320px;
+    align-items: stretch;
+    min-height: 300px;
+    height: auto;
     box-sizing: border-box;     
 }
 
-.tier h3.bronze {
+.tier h3.traveler {
     color: #cd7f32;
     font-size: 26px;
     font-weight: bold;
 }
 
-.tier h3.silver {
+.tier h3.adventurer {
     color: #c0c0c0;
     font-size: 26px;
     font-weight: bold;
 }
 
-.tier h3.gold {
+.tier h3.globetrotter {
     color: #ffd700;
     text-shadow: 1px 1px black;
     font-size: 26px;
@@ -197,4 +197,45 @@ footer {
 
 .bold {
     font-weight: bold;
+}
+
+#footer {
+    background-color: #012b39;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #0086b3;
+    color: white;
+    font-family: Garamond, serif;
+    box-sizing: border-box;
+    border-bottom: 0;
+}
+
+#lang-toggle {
+    height: 40px;
+    width: 80px;
+    background-image: linear-gradient(to bottom, #ffffff, #00688b);
+    border-radius: 20%;
+    margin-left: 30px;
+    color: #002d3c;
+}
+
+#copyright {
+    position: relative;
+    left: 230px;
+}
+
+.contact-ways {
+    margin: 0;
+    color: rgb(90, 169, 238);
+    margin-left: 20px;
+}
+
+#contact {
+    margin-left: 415px;
+    text-decoration: none; 
+    color: inherit;
 }
