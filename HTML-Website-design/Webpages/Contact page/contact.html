@@ -2,7 +2,7 @@
 <html lang ="en">
     <head>
         <meta charset = "utf-8">
-        <meta name = "viewpoint" content = "width=device-width,ititial-scale=1">
+        <meta name = "viewport" content = "width=device-width,initial-scale=1">
         <title>Contact us</title>
         <link rel = "stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="fab.png">
@@ -11,14 +11,13 @@
     </head>
     
 
-    <body>
+    <body id = "translatable-content">
 
-        <script src="style.js"></script>
 
 
         <header class = "header">
             <div id="headerTextPic">
-                <h1> DRONEYE </h1>
+                <h1 data-key = "welcome-header"> DRONEYE </h1>
                 <img src = "IMG_3008.PNG" alt = "DronEye logo" width = "150px" height="150px">
             </div>
             <div id = "menu">
@@ -30,91 +29,95 @@
             </div>
             <div id="dropdownContent">
                 <a href="AboutHtml.html" class = "menu-links" target = "_blank">
-                <button class = "menu-button">
+                <button class = "menu-button" data-key="about-us">
                     About Us</button>
              </a>
 
                 <a href="productFeatures.html" class = "menu-links" target = "_blank">
-                <button class = "menu-button">
+                <button class = "menu-button" data-key = "product-features">
                     Product Features</button>
             </a>
 
                 <a href="Pricing Page.html" class = "menu-links" target = "_blank">
-                 <button class = "menu-button">
+                 <button class = "menu-button" data-key = "pricing">
                     Pricing</button>
              </a>
 
                 <a href="contact.html" class = "menu-links" target = "_blank">
-                     <button class = "menu-button">
+                     <button class = "menu-button" data-key = "contact">
                     Contact</button>
             </a>
 
                  <a href="Team page.html" class = "menu-links" target = "_blank">
-                    <button class = "menu-button">
+                    <button class = "menu-button" data-key = "our-team">
                   Our Team</button>
             </a>
-                <a class = "menu-links" href="https://Team2-DronEye/DronEyE.github.io/blob/main/HTML-Website-design/Webpages/index.html" target = "_blank">
+                <a class = "menu-links" href="index.html" target = "_blank">
                 <img src = "IMG_3008.PNG" alt = "DronEye logo" height = "250px" width = "250px">
             </a>
             </div>
         </header>
         <main>
             <div class="contact">
-                <h1 class="contact-ttl">Contact us</h1>
+                <h1 class="contact-ttl" data-key ="Contact Us">Contact us</h1>
                 <div class = "address">
                     <p class = "bold">DronEyE</p>
                     <p>000 Smtn Avenue</p>
                     <p>Ottawa, ON K1H 000</p>
-                    <p>Somewhere building xF</p>
+                    <p data-key = "building">Somewhere building xF</p>
                 </div>
                 <div style = "height:50px" aria-hidden = "true" class ="wp^block-spacer"></div>
                 <form action="">
                     <table class="contact-table">
                         <tr>
-                            <th class="contact-item">Name</th>
+                            <th class="contact-item" data-key = "name">Name</th>
                             <td class="contact-body">
                                 <input type="text" name="Name" class="form-text">
                             </td>
                         </tr>
                         <tr>
-                            <th class="contact-item">Email</th>
+                            <th class="contact-item" data-key = "Email">Email</th>
                             <td class="contact-body">
                                 <input type="email" name="Mail" class="form-text">
                             </td>
                         </tr>
                         <tr>
-                            <th class="contact-item">Contents</th>
+                            <th class="contact-item" data-key = "Contents">Contents</th>
                             <td class="contact-body">
                                 <textarea name="Contents" class="form-textarea"></textarea>
                             </td>
                         </tr>
                     </table>
 
-                    <input class="contact-submit" type="submit" value="Submit">
+                    <input class="contact-submit" data-key = "Submit" type="submit" value="Submit">
                 </form>
             </div>
         </main>
 
-    </body>
     <footer>
         <div id = "footer">
          <button id="lang-toggle">Français</button>
-            <div class="contact-box">
-                <p>Contact Us</p>
+            <div class="contact-box"> 
+                <p data-key = "Contact Us">Contact Us</p>
                 <p>
                     <i class="fa-solid fa-phone"></i>
                     <a href="tel:647-999-9999">647-999-9999</a>
                 </p>
-                <p>email@example.com, Company Name</p>
+                <p>
+                    <span data-key= "email-example">email@example.com</span> 
+                    <span data-key = "company">Company Name</span>
+                </p>
             </div>
 
         
-            <p id="copyright">
+            <p id="copyright" data-key = "reserved">
             © 2025 DronEye. All rights reserved.
             </p>
         </div>
     </footer>
 
-     
+    <script src="style.js"></script>
+    </body>
+
 
 </html>
