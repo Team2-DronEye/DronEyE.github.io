@@ -83,11 +83,6 @@ function translatePage(lang) {
     } else {
         toggleButton.textContent = "English";
     }
-
-    /*
-    if (translations[lang] && translations[lang]['button_text']) {
-        toggleButton.textContent = translations[lang]['button_text'];
-    }*/
     
     document.getElementById('translatable-content').setAttribute('lang', lang);
 }
