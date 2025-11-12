@@ -1,69 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menuButton = document.getElementById("menuBar");
-    const dropdown = document.getElementById("dropdownContent");
-
-    menuButton.addEventListener("click", () => {
-        dropdown.style.width = dropdown.style.width === "250px" ? "0" : "250px";
-    });
-
-    const aboutTitle = document.getElementById("aboutTitle");
-    const greeting = document.createElement("h2");
-    const hour = new Date().getHours();
-let greetingKey;
-
-if (hour < 12) {
-    greetingKey = "morning-greeting";
-} else if (hour < 18) {
-    greetingKey = "afternoon-greeting";
-} else {
-    greetingKey = "evening-greeting";
-}
-
-greeting.setAttribute("data-key", greetingKey);
-greeting.textContent = translations["en"][greetingKey];
-
-    greeting.style.color = "#006699";
-    greeting.style.fontFamily = "'Arimo', sans-serif";
-    greeting.style.marginTop = "10px";
-    greeting.style.transition = "opacity 0.8s ease";
-    greeting.style.opacity = "0";'You selected the ' + planName + ' plan! Do you want to go to the pricing page?' 
-
-    aboutTitle.insertAdjacentElement("afterend", greeting);
-    setTimeout(() => (greeting.style.opacity = "1"), 300);
-
-    document.querySelectorAll('.btn').forEach(button => {
-        button.addEventListener('mouseover', () => {
-            button.style.transform = 'scale(1.05)';
-            button.style.transition = 'transform 0.2s ease';
-        });
-        button.addEventListener('mouseout', () => {
-            button.style.transform = 'scale(1)';
-        });
-    });
-
-    document.querySelectorAll('.tier .btn').forEach(button => {
-        button.addEventListener('click', (event) => {
-            event.preventDefault();
-            const planElement = button.closest('.tier').querySelector('h3');
-            const planName = planElement ? planElement.textContent.trim() : 'this';
-
-            if (confirm('You selected the ' + planName + ' plan! Do you want to go to the pricing page?')) {
-                window.location.href = "../Pricing page/Pricing Page.html";
-            }
-        });
-    });
-
-    const getStartedBtn = document.getElementById("getStartedBtn");
-    if (getStartedBtn) {
-        getStartedBtn.addEventListener("click", (event) => {
-            event.preventDefault();
-            if (confirm("Ready to begin your journey? Do you want to go to the DronEye product features page?")) {
-                window.location.href = getStartedBtn.href;
-            }
-        });
-    }
-});
-
 const translations = {
     "en": {
         "about-us": "About Us",
@@ -103,8 +37,7 @@ const translations = {
         "phone": "647-999-9999",
         "email": "dronEye@gmail.com",
         "copyright": "Copyright© 2025 DronEye. All rights reserved."
-
-
+        
     },
     "fr": {
         "about-us": "À propos de nous",
@@ -146,6 +79,71 @@ const translations = {
         "copyright": "Droit d’auteur© 2025 DronEye. Tous droits réservés."
     }
 };
+document.addEventListener("DOMContentLoaded", function() {
+    const menuButton = document.getElementById("menuBar");
+    const dropdown = document.getElementById("dropdownContent");
+
+    menuButton.addEventListener("click", () => {
+        dropdown.style.width = dropdown.style.width === "250px" ? "0" : "250px";
+    });
+
+    const aboutTitle = document.getElementById("aboutTitle");
+    const greeting = document.createElement("h2");
+    const hour = new Date().getHours();
+let greetingKey;
+
+if (hour < 12) {
+    greetingKey = "morning-greeting";
+} else if (hour < 18) {
+    greetingKey = "afternoon-greeting";
+} else {
+    greetingKey = "evening-greeting";
+}
+
+greeting.setAttribute("data-key", greetingKey);
+greeting.textContent = translations["en"][greetingKey];
+
+greeting.style.color = "#006699";
+greeting.style.fontFamily = "'Arimo', sans-serif";
+greeting.style.marginTop = "10px";
+greeting.style.transition = "opacity 0.8s ease";
+greeting.style.opacity = "0";
+
+aboutTitle.insertAdjacentElement("afterend", greeting);
+setTimeout(() => (greeting.style.opacity = "1"), 300);
+
+    document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('mouseover', () => {
+            button.style.transform = 'scale(1.05)';
+            button.style.transition = 'transform 0.2s ease';
+        });
+        button.addEventListener('mouseout', () => {
+            button.style.transform = 'scale(1)';
+        });
+    });
+
+    document.querySelectorAll('.tier .btn').forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            const planElement = button.closest('.tier').querySelector('h3');
+            const planName = planElement ? planElement.textContent.trim() : 'this';
+
+            if (confirm('You selected the ' + planName + ' plan! Do you want to go to the pricing page?')) {
+                window.location.href = "../Pricing page/Pricing Page.html";
+            }
+        });
+    });
+
+    const getStartedBtn = document.getElementById("getStartedBtn");
+    if (getStartedBtn) {
+        getStartedBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            if (confirm('Ready to begin your journey? Do you want to go to the DronEye product features page?')) {
+                window.location.href = getStartedBtn.href;
+            }
+        });
+    }
+});
 
 function translatePage(lang) {
     document.querySelectorAll('[data-key]').forEach(element => {
