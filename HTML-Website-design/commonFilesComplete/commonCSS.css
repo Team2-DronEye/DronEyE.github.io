@@ -99,11 +99,14 @@ h1 {
     font-family: Garamond, serif;
     cursor: pointer;
     transition: background-image 0.3s ease;
+    transition: transform 0.2s ease-in-out;
+    display: block;
 
 }
 
 .dropdown-buttons:hover {
     background: linear-Gradient(to bottom, #0093c4, #00688b);
+    transform: scale(1.05);
 }
 
 #footer {
