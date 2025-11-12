@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
-    <link rel="stylesheet" href="../../CSS/css.css">
+    <link rel="stylesheet" href="../../commonFilesComplete/commonCSS.css">
     <link rel="stylesheet" href="PricingPage.css">
 </head>
 <body>
     <div id="translatable-content" lang="en">
         <div class="header">
-            <div id="headerTextPic">
+            <a id="headerTextPic" href = "../mainPageComplete/IndexHTML.html">
                 <h1> DRONEYE </h1>
-                <img src="../IMG_3008.PNG" alt="DronEye logo" width="150px" height="150px" id="refresh">
-            </div>
+                <img src="../IMG_3008.PNG" alt="DronEye logo" width="150px" height="150px" id="refresh" >
+            </a>
             <div id="menu" onmouseover="document.getElementById('dropdownContent').style.width='250px'">
                 <button id="menuBar">
                     <span class="blue-bar"></span>
@@ -84,6 +84,12 @@
             </div>
         </div>
         <div id="dropdownContent" onmouseout="document.getElementById('dropdownContent').style.width='0px'" onmouseover="document.getElementById('dropdownContent').style.width='250px';">
+            <a href="../mainPageComplete/IndexHTML.html" class="menu-links" target="_blank">
+                <button class="dropdown-buttons" data-key="pricing">
+                    Home
+                </button>
+            </a>
+
             <a href="../About/AboutHtml.html" class="menu-links" target="_blank">
                 <button class="dropdown-buttons" data-key="about-us">
                     About Us
@@ -93,12 +99,6 @@
             <a href="../Product features/productFeatures.html" class="menu-links" target="_blank">
                 <button class="dropdown-buttons" data-key="product-features">
                     Product Features
-                </button>
-            </a>
-
-            <a href="Pricing Page.html" class="menu-links" target="_blank">
-                <button class="dropdown-buttons" data-key="pricing">
-                    Pricing
                 </button>
             </a>
 
@@ -114,17 +114,22 @@
                 </button>
             </a>
             <a class="menu-links" href="index" target="_blank">
-                <img src="../IMG_3008.PNG" alt="DronEye logo" height="250px" width="250px">
+                <img src="../IMG_3008.PNG" alt="DronEye logo" height="250px" width="250px" class = "refresh">
             </a>
         </div>
         <div id="footer">
             <button id="lang-toggle">Français</button>
-            Contact Us <br> something
-            <p>
+            <a id="contact" data-key="contact-us" href="../Contact page/contact.html" target="_blank">Contact Us </a>
+
+            <p class="contact-ways">
                 <i class="fa-solid fa-phone"></i>
-                <a href="tel:647-999-9999">647-999-9999</a>
-            </p>email, company name
-            <p id="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
+                647-999-9999
+            </p>
+            <p class="contact-ways">
+                <i class="fa-solid fa-envelope"></i>
+                dronEye@gmail.com
+            </p>
+            <p id="copyright" data-key="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
         </div>
         <script src="PricingPageJavascript.js"></script>
 </body>
