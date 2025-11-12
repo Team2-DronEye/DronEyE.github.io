@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us | DronEye Journey</title>
+    <link rel="icon" type = "image/png" href = "../IMG_3008.PNG">
     <link rel="stylesheet" href="../About page/AboutCss.css">
+    <link rel="stylesheet" href="../../commonFilesComplete/commonCSS.css">
 </head>
 <body>
     <div id="translatable-content" lang="en"></div>
     <div class="header">
-        <div id="headerTextPic">
+        <a id="headerTextPic" href = "../mainPageComplete/IndexHTML.html">
             <h1>DRONEYE</h1> 
-            <img src="../IMG_3008.PNG" alt="DronEye Logo">
-        </div>
+            <img src="../IMG_3008.PNG" alt="DronEye Logo" width = "150px" height = "150px">
+        </a>
         <div id="menu">
             <button id="menuBar">
                 <span class="blue-bar"></span>
@@ -20,12 +22,12 @@
             </button>
 
             <div id="dropdownContent">
-                <a href="../mainPageComplete/IndexHTML.html" class="menu-links"><button class="menu-button" data-key="home">Home</button></a>
-                <a href="../About page/AboutHtml.html" class="menu-links"><button class="menu-button" data-key="about-us">About</button></a>
-                <a href="../Product features/productFeatures.html" class="menu-links"><button class="menu-button" data-key="product-features">Product Features</button></a>
-                <a href="../Pricing page/Pricing Page.html" class="menu-links"><button class="menu-button" data-key="pricing">Pricing</button></a>
-                <a href="../Contact page/contact.html" class="menu-links"><button class="menu-button" data-key="contact">Contact</button></a>
-                <a href="../Team page/Team Page.html" class="menu-links"><button class="menu-button" data-key="our-team">Our Team</button></a>
+                <a href="../mainPageComplete/IndexHTML.html" class="menu-links"><button class="dropdown-buttons" data-key="home">Home</button></a>
+                <a href="../Product features/productFeatures.html" class="menu-links"><button class="dropdown-buttons" data-key="product-features">Product Features</button></a>
+                <a href="../Pricing page/Pricing Page.html" class="menu-links"><button class="dropdown-buttons" data-key="pricing">Pricing</button></a>
+                <a href="../Contact page/contact.html" class="menu-links"><button class="dropdown-buttons" data-key="contact">Contact</button></a>
+                <a href="../Team page/Team Page.html" class="menu-links"><button class="dropdown-buttons" data-key="our-team">Our Team</button></a>
+                <img src = "../IMG_3008.PNG" alt = "DronEye logo" height = "250px" width = "250px" class = "refresh">
             </div>
         </div>
     </div>
@@ -39,7 +41,7 @@
         connect with other users, and see the world from a whole new perspective.
     </p>
 
-    <h2 data-key="how-it-works">Want to know how it works?</h2>
+    <h2 data-key="how-it-works" id = "how-it-works">Want to know how it works?</h2>
     <p class="info-text" data-key="how-it-works-desc">
         Simply choose your membership plan, select a destination, and enjoy breathtaking live views from our drones in real time. 
         Whether you're discovering cities, beaches, or hidden landscapes, <span class="bold">DronEye</span> brings the adventure to you.
@@ -87,3 +89,5 @@
 <script src="../../commonFilesComplete/commonJS.js"></script>
 
 <script src="../About page/AboutJavascript.js"></script>
+</body>
+</html>

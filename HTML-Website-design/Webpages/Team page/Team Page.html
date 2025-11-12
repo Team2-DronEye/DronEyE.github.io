@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <title>DronEye | Our Team</title>
   <link rel="stylesheet" href="TeamPage.css">
-  <link rel="stylesheet" href="../commonCSS.css">
+  <link rel="stylesheet" href="../../commonFilesComplete/commonCSS.css">
   <script src="TeamPageJavascript.js" defer></script>
-  <script src="../commonJS.js" defer></script>
+  <script src="https://kit.fontawesome.com/06d3a59de6.js" crossorigin="anonymous"></script>
+  <script src="../../commonFilesComplete/commonJS.js" defer></script>
 </head>
 
 <body>
   <!-- HEADER -->
   <div class="header">
-    <div id="headerTextPic">
+    <a id="headerTextPic" href="../mainPageComplete/IndexHTML.html">
       <h2 id="headerTitle" class="hHeaderText">DRONEYE</h2>
       <img src="LogoCopy.PNG" alt="DronEye logo" width="150" height="150">
-    </div>
+    </a>
 
     <div id="menu">
       <button id="menuBar">
@@ -26,23 +27,22 @@
 
       <div id="dropdownContent">
         <a href="../About page/AboutHtml.html" class="menu-links" target="_blank">
-          <button class="dropdown-buttons">About Us</button>
+          <button class="dropdown-buttons" data-key="about-us">About Us</button>
         </a>
         <a href="../Product Features/productFeatures.html" class="menu-links" target="_blank">
-          <button class="dropdown-buttons">Product Features</button>
+          <button class="dropdown-buttons" data-key="product-features">Product Features</button>
         </a>
         <a href="../Pricing page/Pricing Page.html" class="menu-links" target="_blank">
-          <button class="dropdown-buttons">Pricing</button>
+          <button class="dropdown-buttons" data-key="pricing">Pricing</button>
         </a>
         <a href="../Contact page/contact.html" class="menu-links" target="_blank">
-          <button class="dropdown-buttons">Contact</button>
+          <button class="dropdown-buttons" data-key="contact">Contact</button>
         </a>
         <a href="../Team Page/TeamPage.html" class="menu-links" target="_blank">
-          <button class="dropdown-buttons">Our Team</button>
+          <button class="dropdown-buttons" data-key="our-team">Our Team</button>
         </a>
         <a class="menu-links" href="../index.html" target="_blank">
-          <!-- Logo path here too -->
-          <img src="LogoCopy.PNG" alt="DronEye logo" height="250" width="250">
+          <img src="LogoCopy.PNG" alt="DronEye logo" height="250" width="250" class="refresh">
         </a>
       </div>
     </div>
@@ -51,7 +51,7 @@
   <!-- MAIN CONTENT -->
   <div class="main">
     <div class="centeredTitle">
-      <h1>Meet Our Team</h1>
+      <h1 data-key="our-team-heading">Meet Our Team</h1>
       <p class="intro">Welcome to the DronEye team — the people making it all happen!</p>
     </div>
 
@@ -139,13 +139,15 @@
   <!-- FOOTER -->
   <div id="footer">
     <button id="lang-toggle">Français</button>
-    <p>Contact Us<br>something</p>
+    <p data-key="contact-us">Contact Us<br>something</p>
     <p>
       <i class="fa-solid fa-phone"></i>
       <a href="tel:647-999-9999">647-999-9999</a>
     </p>
-    <p>email, company name</p>
-    <p id="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
+    <p class = "contact-ways">
+      <i class="fa-solid fa-envelope"></i>
+       dronEye@gmail.com</p>
+    <p id="copyright" data-key="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
   </div>
 </body>
 </html>
