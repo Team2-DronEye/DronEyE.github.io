@@ -211,7 +211,7 @@ h1 {
 
 #footer {
     background-color: #012b39;
-    width: 100vw;
+    width: 100%;
     bottom: 0;
     padding: 20px 40px;
     box-sizing: border-box;
