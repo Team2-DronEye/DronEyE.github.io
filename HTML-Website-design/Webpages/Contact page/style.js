@@ -41,7 +41,7 @@ const translations = {
         "reserved" : "All rights reserved",
         "email-example":"email@example.com",
         "company": "Company Name",
-        "building": "Somewhere Building xF"
+        "building": "Somewhere Building xF",
 
         },
         
@@ -83,11 +83,6 @@ function translatePage(lang) {
     } else {
         toggleButton.textContent = "English";
     }
-
-    /*
-    if (translations[lang] && translations[lang]['button_text']) {
-        toggleButton.textContent = translations[lang]['button_text'];
-    }*/
     
     document.getElementById('translatable-content').setAttribute('lang', lang);
 }
