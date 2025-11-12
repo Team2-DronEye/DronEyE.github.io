@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const translations = {
     "en": {
-        "welcome-header": "Welcome to DronEye",
+        "welcome-header": "DronEye",
         "about-us": "About Us",
         "product-features": "Product Features",
         "pricing": "Pricing",
