@@ -24,13 +24,9 @@ function closeDropdown() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const menu = document.getElementById('menu');
+    const dropdown = document.getElementById('dropdownContent');
 
-    if (menu) {
-        menu.addEventListener('mouseover', openDropdown);
-        menu.addEventListener('mouseout', closeDropdown);
-    }
-});
-   if (menu && dropdown) {
+    if (menu && dropdown) {
         menu.addEventListener('mouseenter', () => {
             dropdown.style.width = '250px';
         });
