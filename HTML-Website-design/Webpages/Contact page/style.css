@@ -209,25 +209,7 @@ h1 {
 }
 
 
-#footer {
-    background-color: #012b39;
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    box-sizing: border-box;
-    border-top: 3px solid #0086b3;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
-    min-width: 200px;
-    margin: 10px;
 
-    
-
-
-}
 
 a[href^="tel"] {
     color: white;
