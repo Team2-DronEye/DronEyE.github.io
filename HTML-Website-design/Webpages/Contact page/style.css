@@ -224,6 +224,9 @@ h1 {
     min-width: 200px;
     margin: 10px;
 
+    
+
+
 }
 
 a[href^="tel"] {
@@ -245,6 +248,7 @@ a[href^="tel"] {
     font-size: 0.9rem;
     opacity: 0.8;
     margin-left: auto;
+    position:static
 
 }
 
