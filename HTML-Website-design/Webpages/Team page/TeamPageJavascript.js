@@ -1,4 +1,4 @@
-// Dropdown logic
+// Dropdown logic (same style as your friend) 
 function openDropdown() {
   const dropdown = document.getElementById('dropdownContent');
   if (dropdown) dropdown.style.width = '250px';
@@ -27,62 +27,68 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Toggle More Info for team members
-function toggleMore(id) {
+function toggleMore(id){
   const section = document.getElementById(id);
   if (section) {
     section.classList.toggle('show');
-  }
-}
+  };
+};
 
-// 🌍 TRANSLATIONS
-const translations = { 
-  "en": {
-    "welcome-header": "Welcome to DronEye",
+// -------------------- TRANSLATION SYSTEM (added) --------------------
+const translations = {
+  en: {
     "about-us": "About Us",
     "product-features": "Product Features",
     "pricing": "Pricing",
     "contact": "Contact",
     "our-team": "Our Team",
-    "contact-us": "Contact Us",
+    "our-team-heading": "Meet Our Team",
+    "contact-us": "Contact Us<br>something",
     "copyright": "Copyright© 2025 DronEye. All rights reserved.",
     "button_text": "Français"
   },
-  "fr": {
-    "welcome-header": "Bienvenue chez DronEye",
+  fr: {
     "about-us": "À propos de nous",
     "product-features": "Produit caractéristiques",
     "pricing": "Tarifs",
     "contact": "Contact",
     "our-team": "Notre équipe",
-    "contact-us": "Contactez-nous",
+    "our-team-heading": "Rencontrez notre équipe",
+    "contact-us": "Contactez-nous<br>quelque chose",
     "copyright": "Droit d’auteur© 2025 DronEye. Tous droits réservés.",
     "button_text": "English"
   }
 };
 
 function translatePage(lang) {
-  document.querySelectorAll('[data-key]').forEach(element => {
-    const key = element.getAttribute('data-key');
-    if (translations[lang] && translations[lang][key]) {
-      element.innerHTML = translations[lang][key];
-    }
+  // swap text for every element that has a data-key
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const key = el.getAttribute('data-key');
+    const val = translations[lang] && translations[lang][key];
+    if (val) el.innerHTML = val;
   });
 
+  // toggle button label
   const toggleButton = document.getElementById('lang-toggle');
-  if (translations[lang] && translations[lang]['button_text']) {
+  if (toggleButton && translations[lang] && translations[lang]['button_text']) {
     toggleButton.textContent = translations[lang]['button_text'];
   }
-  
-  document.getElementById('translatable-content').setAttribute('lang', lang);
+
+  // set page language on <html>
+  document.documentElement.setAttribute('lang', lang);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+// init + toggle (added)
+document.addEventListener('DOMContentLoaded', function () {
+  // start in English
   translatePage('en');
 
-  document.getElementById('lang-toggle').addEventListener('click', () => {
-    const contentDiv = document.getElementById('translatable-content');
-    let currentLang = contentDiv.getAttribute('lang');
-    const newLang = (currentLang === 'en') ? 'fr' : 'en';
-    translatePage(newLang);
-  });
+  const btn = document.getElementById('lang-toggle');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('lang') || 'en';
+      const next = current === 'en' ? 'fr' : 'en';
+      translatePage(next);
+    });
+  }
 });
