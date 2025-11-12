@@ -41,7 +41,7 @@ const translations = {
         "reserved" : "All rights reserved",
         "email-example":"email@example.com",
         "company": "Company Name",
-        "building": "Somewhere Building xF"
+        "building": "Somewhere Building xF",
 
         },
         
