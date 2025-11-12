@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.addEventListener('mouseout', closeDropdown);
     }
 });
-   if (menu && dropdown) {
+if (menu && dropdown) {
         menu.addEventListener('mouseenter', () => {
             dropdown.style.width = '250px';
         });
