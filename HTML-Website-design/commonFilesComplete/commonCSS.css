@@ -4,6 +4,7 @@ body {
     margin: 0;
     background: linear-gradient(to bottom, #87ceeb, #01394c);
     background-attachment: fixed;
+    text-align: center;
 }
 
 .header {
@@ -77,6 +78,7 @@ h1 {
     width: 0;
     background-color: #add8e6;
     transition: width 0.3s;
+    z-index: 9999;
 }
 
 .menu-links {
@@ -116,8 +118,6 @@ h1 {
     display: flex;
     align-items: center;
     padding: 0 30px;
-    box-sizing: border-box;
-    border-bottom: 3px solid #0086b3;
     color: white;
     font-family: Garamond, serif;
     box-sizing: border-box;
