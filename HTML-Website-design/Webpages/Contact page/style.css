@@ -103,7 +103,11 @@ h1 {
 }
 
 
+.contact p{
+    color:#00bfff;
+    text-align: left;
 
+}
 
 a[href^="tel"] {
     color: #00bfff;
