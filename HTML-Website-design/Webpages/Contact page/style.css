@@ -12,14 +12,7 @@ main {
     justify-content: center;
 }
 
-h1 {
-    margin: 0;
-    font-family: 'Palatino', 'Palatino Linotype';
-    font-size: 90px;
-    color: #0086b3;
-    font-weight: 1500;
-    text-shadow: 2px 2px black;
-}
+
 .contact{
     
     margin: 15px auto;
