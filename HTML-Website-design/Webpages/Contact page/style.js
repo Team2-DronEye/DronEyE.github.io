@@ -40,7 +40,7 @@ const translations = {
         "reserved" : "All rights reserved",
         "email-example":"email@example.com",
         "company": "Company Name",
-        "building": "Somewhere Building xF",
+        "building": "XXXXXX Building xF",
 
         },
         
@@ -59,7 +59,7 @@ const translations = {
         "button_text": "English",
         "email-example":"courriel@example.com",
         "company": "Nom de l'entreprise",
-        "building": "Somewhere Bâtiment xF",
+        "building": "XXXXXX Bâtiment xF",
         }
 };
 
