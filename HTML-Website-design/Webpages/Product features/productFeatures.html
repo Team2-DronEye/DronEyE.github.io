@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href="styling.css">
-    <link rel = "stylesheet" href="commonCSS.css">
+    <link rel = "stylesheet" href="../../commonFilesComplete/commonCSS.css">
+    <link rel="icon" type="image/png" href="../IMG_3008.PNG">
     <script src="javascriptStuff.js" defer></script>
-    <script src="commonJS.js" defer></script>
+    <script src="../../commonFilesComplete/commonJS.js" defer></script>
 </head>
 <body>
+    <div id = "translatable-content" lang="en">
     <div class = "header">
         <div id = "headerTextPic">
+            <a id = "headerTextPic" href = "../mainPageComplete/IndexHTML.html">
             <h2 id="headerTitle" class = "hHeaderText"> DRONEYE </h2>
-            <img src="logoCopy.PNG" alt="DronEye logo" width="150px" height="150px">
+            <img src="../IMG_3008.PNG" alt="DronEye logo" width="150px" height="150px">
         </div>
         <div id = "menu">
             <button id = "menuBar">
@@ -28,29 +31,29 @@
                 </a>
 
                 <a href="../Product Features/productFeatures.html" class="menu-links" target="_blank">
-                    <button class="dropdown-buttons">
+                    <button class="dropdown-buttons" data-key="product-features">
                         Product Features
                     </button>
                 </a>
 
                 <a href="../Pricing page/Pricing Page.html" class="menu-links" target="_blank">
-                    <button class="dropdown-buttons">
+                    <button class="dropdown-buttons" data-key="pricing">
                         Pricing
                     </button>
                 </a>
                 <a href="../Contact page/contact.html" class="menu-links" target="_blank">
-                    <button class="dropdown-buttons">
+                    <button class="dropdown-buttons" data-key="contact">
                         Contact
                     </button>
                 </a>
 
-                <a href="../Team Page.html" class="menu-links" target="_blank">
-                    <button class="dropdown-buttons">
+                <a href="../Team page/Team Page.html" class="menu-links" target="_blank">
+                    <button class="dropdown-buttons" data-key="team">
                         Our Team
                     </button>
                 </a>
-                <a class="menu-links" href="index" target="_blank">
-                    <img src="logoCopy.PNG" alt="DronEye logo" height="250px" width="250px">
+                <a class="menu-links" href="../mainPageComplete/IndexHTML.html" target="_blank">
+                    <img src="../IMG_3008.PNG" alt="DronEye logo" height="250px" width="250px">
                 </a>
             </div>
         </div>
@@ -58,18 +61,18 @@
 
     <div class="main">
         <div class="centeredTitle">
-            <h1>Team Page</h1>
+            <h1  data-key="title">Product Features</h1>
         </div>
 
         <div class="textBox">
-            <p>
+            <p  data-key="text1">
                 Check out a limited amount of places around the world through a 
                 live drone before making a decision of visiting the location or travel digitally. 
                 This is a product that is to be paid through a subscription. The user would also be able to contact other drones 
                 with this product to ask their opinions on the locations or maybe if they know where to find 
                 something at a certain area.
             </p>
-            <a href="../Pricing page/Pricing Page.html" class="buyButton">Buy a Subscription</a>
+            <a href="../Pricing page/Pricing Page.html" class="buyButton" data-key="buyText">Buy a Subscription</a>
         </div>
 
         <div class="imageBox">
@@ -80,7 +83,7 @@
 
         <div class="features">
             <h2>Why Choose DronEyE?</h2>
-                <ul>
+                <ul data-key="text2">
                     <li><strong>Live verification:</strong> See real time footage to confirm if a location matches reviews and expectations.</li>
                     <li><strong>Unbiased insights:</strong> Avoid outdated or misleading info with direct visual access to your destination.</li>
                     <li><strong>Digital travel:</strong> Explore cities and landmarks from home, saving time and money.</li>
@@ -90,14 +93,19 @@
         </div>
     </div>
 
-    <div id="footer">
+    <div id = "footer">
         <button id="lang-toggle">Français</button>
-        Contact Us <br> something
-        <p>
+        <a id = "contact" data-key="contact-us" href = "../Contact page/contact.html" target = "_blank">Contact Us </a>
+
+        <p class = "contact-ways">
             <i class="fa-solid fa-phone"></i>
-            <a href="tel:647-999-9999">647-999-9999</a>
-        </p>email, company name
-        <p id="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
+            647-999-9999
+        </p>
+        <p class = "contact-ways">
+            <i class="fa-solid fa-envelope"></i>
+            dronEye@gmail.com</p>
+        <p id = "copyright" data-key="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
+    </div>
     </div>
 </body>
 </html>
