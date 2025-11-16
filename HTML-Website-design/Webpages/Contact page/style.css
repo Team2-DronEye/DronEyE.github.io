@@ -110,8 +110,3 @@ h1 {
 
 }
 
-a[href^="tel"] {
-    color: #00bfff;
-    font-weight: bold;
-    text-decoration: none;
-}
