@@ -5,8 +5,10 @@
         <meta name = "viewport" content = "width=device-width,initial-scale=1">
         <title>Contact us</title>
         <link rel = "icon" type = "image/png" href = "../IMG_3008.PNG">
-        <link rel = "stylesheet" href="style.css">
         <link rel = "stylesheet" href="../../commonFilesComplete/commonCSS.css">
+        <link rel = "stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/06d3a59de6.js" crossorigin="anonymous"></script>
+        
 
 
 
@@ -19,7 +21,7 @@
 
         <header class = "header">
             <a id="headerTextPic" href="../mainPageComplete/IndexHTML.html">
-                <h1 data-key = "welcome-header"> DRONEYE </h1>
+                <h1> DRONEYE </h1>
                 <img src = "../IMG_3008.PNG" alt = "DronEye logo" width = "150px" height="150px">
                 </a>
             </a>
@@ -31,28 +33,32 @@
                 </button>
             </div>
             <div id="dropdownContent">
+                <a href  = "../mainPageComplete/IndexHTML.html" class = "menu-links" target = "_blank">
+                <button class = "dropdown-buttons" data-key="home">
+                    Home</button>
+                </a>
                 <a href="../About page/AboutHtml.html" class = "menu-links" target = "_blank">
-                <button class = "menu-button" data-key="about-us">
+                <button class = "dropdown-buttons" data-key="about-us">
                     About Us</button>
              </a>
 
                 <a href="../Product features/productFeatures.html" class = "menu-links" target = "_blank">
-                <button class = "menu-button" data-key = "product-features">
+                <button class = "dropdown-buttons" data-key = "product-features">
                     Product Features</button>
             </a>
 
                 <a href="../Pricing page/Pricing Page.html" class = "menu-links" target = "_blank">
-                 <button class = "menu-button" data-key = "pricing">
+                 <button class = "dropdown-buttons" data-key = "pricing">
                     Pricing</button>
              </a>
 
                 <a href="../Contact page/contact.html" class = "menu-links" target = "_blank">
-                     <button class = "menu-button" data-key = "contact">
+                     <button class = "dropdown-buttons" data-key = "contact">
                     Contact</button>
             </a>
 
                  <a href="../Team page/Team Page.html" class = "menu-links" target = "_blank">
-                    <button class = "menu-button" data-key = "our-team">
+                    <button class = "dropdown-buttons" data-key = "our-team">
                   Our Team</button>
             </a>
                 <img src = "IMG_3008.PNG" alt = "DronEye logo" height = "250px" width = "250px" class= "refresh">
@@ -64,7 +70,7 @@
             <div class="contact">
                 <h1 class="contact-ttl" data-key ="Contact Us">Contact us</h1>
                 <div class = "address">
-                    <p class = "bold">DronEyE</p>
+                    <p class = "bold">DronEye</p>
                     <p>000 Smtn Avenue</p>
                     <p>Ottawa, ON K1H 000</p>
                     <p data-key = "building">Somewhere building xF</p>
@@ -97,28 +103,20 @@
             </div>
         </main>
 
-    <footer>
         <div id = "footer">
-         <button id="lang-toggle">Français</button>
-            <div class="contact-box"> 
-                <p data-key = "Contact Us">Contact Us</p>
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:647-999-9999">647-999-9999</a>
-                </p>
-                <p>
-                    <span data-key= "email-example">Github@example.com</span> 
-                    <span data-key = "company">Company Name</span>
-                </p>
-            </div>
-
-        
-            <p id="copyright" data-key = "reserved">
-            © 2025 DronEye. All rights reserved.
+            <button id="lang-toggle">Français</button>
+            <a id = "contact" data-key="contact-us" href = "../Contact page/contact.html" target = "_blank">Contact Us </a>
+            <p class = "contact-ways">
+                <i class="fa-solid fa-phone"></i>
+                647-999-9999
             </p>
+            <p class = "contact-ways">
+                <i class="fa-solid fa-envelope"></i>
+                dronEye@gmail.com</p>
+            <p id = "copyright" data-key="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
         </div>
-    </footer>
 
+    
     <script src="style.js"></script>
     <script src= "../../commonFilesComplete/commonJS.js"></script>
     </body>

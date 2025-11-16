@@ -45,7 +45,7 @@ h2 {
 
 #p1-topic {
     margin-top: 100px;
-    margin-left: 140px;
+    margin-right: 900px;
     font-size: 28px;
     text-shadow: 1px 0 black;
 }
@@ -54,11 +54,12 @@ h2 {
     width: 300px;
     height: 350px;
     border-radius: 10px;
+    justify-self: center;
 }
 
 .box1 {
-    margin-left: 160px;
-    perspective: 1000px; 
+    margin-right: 905px;
+    perspective: 1000px;
 }
 
 .box-inner {
@@ -104,16 +105,16 @@ h2 {
 
 
 #p2-topic {
-    margin-right: 160px;
-    margin-top: -400px;
-    text-align: right;
+    margin-left: 728px;
+    margin-top: -410px;
+    margin-bottom: 0px;
     font-size: 28px;
     text-shadow: 1px 0 black;
 }
 
 .box2 {
-    margin-left: 970px;
-    margin-top: -3px;
+    margin-left: 750px;
+    margin-top: 31px;
     perspective: 1000px;
 }
 
@@ -123,14 +124,13 @@ h2 {
 
 #p3-topic {
     margin-top: -100px;
-    margin-right: 90px;
-    text-align: center;
+    margin-left: -87px;
     font-size: 28px;
     text-shadow: 1px 0 black;
 }
 
 .box3 {
-    margin-left: 570px;
+    margin-left: -75px;
     perspective: 1000px;
 }
 

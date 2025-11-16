@@ -4,49 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
-    <link rel="stylesheet" href="../../CSS/css.css">
+    <link rel="stylesheet" href="../../commonFilesComplete/commonCSS.css">
     <link rel="stylesheet" href="PricingPage.css">
+    <script src="https://kit.fontawesome.com/06d3a59de6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="translatable-content" lang="en">
         <div class="header">
-            <div id="headerTextPic">
+            <a id="headerTextPic" href="../mainPageComplete/IndexHTML.html">
                 <h1> DRONEYE </h1>
                 <img src="../IMG_3008.PNG" alt="DronEye logo" width="150px" height="150px" id="refresh">
-            </div>
+            </a>
             <div id="menu" onmouseover="document.getElementById('dropdownContent').style.width='250px'">
                 <button id="menuBar">
                     <span class="blue-bar"></span>
                     <span class="blue-bar"></span>
                     <span class="blue-bar"></span>
                 </button>
-
-
             </div>
         </div>
-        <h2 style="font-size: 40px; text-shadow: 2px 2px black; color: #9ed8ff">
-            PRICING PAGE
+        <h2 data-key="Subscriptions" style="font-size: 40px; text-shadow: 2px 2px black; color: #9ed8ff">
+            SUBSCRIPTIONS
         </h2>
-        <h3 style="text-shadow: 0.5px 0.5px black; margin-left: 20px; margin-right: 20px; color: white; font-size: 30px; text-align: center">
+        <h3 data-key="introText" style="text-shadow: 0.5px 0.5px black; margin-left: 20px; margin-right: 20px; color: white; font-size: 30px; text-align: center">
             Discover the world from a new perspective with DRONEYE! Join the DRONEYE family today and unlock endless ways to explore every breathtaking view! Choose the subscription plan that suits you best!
         </h3>
         <div id="MainContent" style="position: relative; text-shadow: 0.5px 0.5px black; color: white; width: 70%; padding: 100px; display: flex; margin-left: auto; margin-bottom: 20%; margin-right: auto; align-self: center; font-family: Garamond; font-size: 120%;">
-            <b id="TierOne">
+            <b data-key="tierOne" id="TierOne">
                 Traveler Tier is recommended for everyone with great offerings!
                 <a href="#TravelerTier" class="buyButton"><div style="font-size: 100%; text-align: center;">Traveler</div></a>
             </b>
-            <b id="TierTwo">
+            <b data-key="tierTwo" id="TierTwo">
                 Adventurer Tier provides the best value and new experiences!
                 <a href="#AdventurerTier" class="buyButton">Adventurer</a>
             </b>
-            <b id="TierThree">
+            <b data-key="tierThree" id="TierThree">
                 Globetrotter Tier is perfect for those who want to explore every horizon of the world!
                 <a href="#GlobetrotterTier" class="buyButton">Globetrotter</a>
             </b>
         </div>
         <div id="InfoContent" style="margin-top: -0.5vw; width: 85%; margin-left: auto; margin-right: auto;">
             <div id="textBox">
-                <b id="TravelerTier">
+                <b data-key="travelerTier" "id="TravelerTier">
                     At $20 a month, Traveler Tier members receive the following benefits:
                     <div style="margin-left: 40px">
                         <ul>
@@ -57,7 +56,7 @@
                 </b>
             </div>
             <div id="textBox">
-                <b id="AdventurerTier">
+                <b data-key="adventurerTier" id="AdventurerTier">
                     At $40 a month, Adventurer Tier members receive the following benefits:
                     <div style="margin-left: 40px">
                         <ul>
@@ -70,7 +69,7 @@
                 </b>
             </div>
             <div id="textBox">
-                <b id="GlobetrotterTier">
+                <b data-key="globetrotterTier" id="GlobetrotterTier">
                     At $70 a month, Globetrotter Tier members receive the following benefits:
                     <div style="margin-left: 40px">
                         <ul>
@@ -84,7 +83,13 @@
             </div>
         </div>
         <div id="dropdownContent" onmouseout="document.getElementById('dropdownContent').style.width='0px'" onmouseover="document.getElementById('dropdownContent').style.width='250px';">
-            <a href="../About/AboutHtml.html" class="menu-links" target="_blank">
+            <a href="../mainPageComplete/IndexHTML.html" class="menu-links" target="_blank">
+                <button class="dropdown-buttons" data-key="pricing">
+                    Home
+                </button>
+            </a>
+
+            <a href="../About page/AboutHtml.html" class="menu-links" target="_blank">
                 <button class="dropdown-buttons" data-key="about-us">
                     About Us
                 </button>
@@ -96,35 +101,34 @@
                 </button>
             </a>
 
-            <a href="Pricing Page.html" class="menu-links" target="_blank">
-                <button class="dropdown-buttons" data-key="pricing">
-                    Pricing
-                </button>
-            </a>
-
             <a href="../Contact Page/contact.html" class="menu-links" target="_blank">
                 <button class="dropdown-buttons" data-key="contact">
                     Contact
                 </button>
             </a>
 
-            <a href="../Team Page.html" class="menu-links" target="_blank">
+            <a href="../Team page/Team Page.html" class="menu-links" target="_blank">
                 <button class="dropdown-buttons" data-key="our-team">
                     Our Team
                 </button>
             </a>
             <a class="menu-links" href="index" target="_blank">
-                <img src="../IMG_3008.PNG" alt="DronEye logo" height="250px" width="250px">
+                <img src="../IMG_3008.PNG" alt="DronEye logo" height="250px" width="250px" class="refresh">
             </a>
         </div>
         <div id="footer">
             <button id="lang-toggle">Français</button>
-            Contact Us <br> something
-            <p>
+            <a id="contact" data-key="contact-us" href="../Contact page/contact.html" target="_blank">Contact Us </a>
+
+            <p class="contact-ways">
                 <i class="fa-solid fa-phone"></i>
-                <a href="tel:647-999-9999">647-999-9999</a>
-            </p>email, company name
-            <p id="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
+                647-999-9999
+            </p>
+            <p class="contact-ways">
+                <i class="fa-solid fa-envelope"></i>
+                dronEye@gmail.com
+            </p>
+            <p id="copyright" data-key="copyright">Copyright© 2025 DronEye. All rights reserved.</p>
         </div>
         <script src="PricingPageJavascript.js"></script>
 </body>
