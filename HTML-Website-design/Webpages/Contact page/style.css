@@ -9,20 +9,12 @@ main {
 
     margin: 200px;
 }
-body {
+main {
     align-items: center;
     height: 100%;
     justify-content: center;
 }
-/*body {
-    color: #0086b3;
-    font-family: sans-serif;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-}
-*/
+
 h1 {
     margin: 0;
     font-family: 'Palatino', 'Palatino Linotype';
