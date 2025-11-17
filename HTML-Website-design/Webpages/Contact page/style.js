@@ -59,7 +59,7 @@ const translations = {
         "button_text": "English",
         "email-example":"courriel@example.com",
         "company": "Nom de l'entreprise",
-        "
+        
         }
 };
 
