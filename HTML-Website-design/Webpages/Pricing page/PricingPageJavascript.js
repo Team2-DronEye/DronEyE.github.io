@@ -72,19 +72,19 @@ const translations = {
         "pricing": "Tarifs",
         "contact": "Contact",
         "our-team": "Notre équipe",
-        "Home": "Acceuil",
+        "Home": "Accueil",
         "btm-txt": "Votre voyage commence ici!",
         "button_text": "English",
         "contact-us": "Contactez-nous",
         "copyright": "Droit d'auteur© 2025 DronEye. Tous droits réservés.",
-        "Subscriptions": "ADHÉSION",
+        "Subscriptions": "ABONNEMENT",
         "introText": "Decouvrir le monde par un nouveau point de vue avec DRONEYE! Rejoignez la famille de DRONEYE aujourd'hui et trouvez des nouveaux façons d'explorer sans fin! Choisissez ce qui vous intéresse le plus!",
         "tierOne": 'Étage Touriste est parfait pour tout le monde avec des grandes offres! <a href="#TravelerTier" class="buyButton"><div style="font-size: 100%; text-align: center;">Touriste</div></a>',
         "tierTwo": 'Étage Voyageur a le meilleur valeur avec des nouvelles experiences! <a href="#AdventurerTier" class="buyButton">Voyageur</a>',
         "tierThree": 'Étage Globe-Trotteur est parfait pour ceux qui veulent explorer chaque partie du monde! <a href="#GlobetrotterTier" class="buyButton">Globe-Trotteur</a>',
-        "travelerTier": "À 20$ par mois, les membres d'Étage Touriste recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Exploration libre des grandes villes à travers le monde</li><li>5 heures de vol par chaque semaine!</li></ul></div>", 
-        "adventurerTier": "À 40$ par mois, les membres d'Étage Voyageur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages d'Étage Touriste</li><li>Exploration libre de tous les villes et villages à travers le monde</li><li>Personnalisation de votre drone</li><li>15 heures de vol par chaque semaine!</li></ul></div>",
-        "globetrotterTier": "À 70$ par mois, les membres d'Étage Globe-Trotteur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages des precedents Étages</li><li>Exploration entiérement libre</li><li>Rien de limite sur des heures de vol</li><li>Priorité absolue sur le choix du mod<le de drone</li></ul></div>"
+        "travelerTier": "À 20$ par mois, les membres Voyageur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Exploration libre des grandes villes à travers le monde</li><li>5 heures de vol par chaque semaine!</li></ul></div>", 
+        "adventurerTier": "À 40$ par mois, les membres Aventurier recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages d'Étage Touriste</li><li>Exploration libre de tous les villes et villages à travers le monde</li><li>Personnalisation de votre drone</li><li>15 heures de vol par chaque semaine!</li></ul></div>",
+        "globetrotterTier": "À 70$ par mois, les membres Globetrotteur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages des precedents Étages</li><li>Exploration entiérement libre</li><li>Rien de limite sur des heures de vol</li><li>Priorité absolue sur le choix du mod<le de drone</li></ul></div>"
     }
 };
 document.addEventListener('DOMContentLoaded', function() {
