@@ -20,12 +20,13 @@
 
 .contact-table{
     width: 100% ;
-    max-width: 100;
+    max-width: 100%;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     max-width: 1000px; 
     margin: 0 auto;  
     color: #0086b3;  
+    border-collapse: collapse;
 
 }
 
