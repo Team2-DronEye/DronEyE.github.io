@@ -6,6 +6,8 @@
     margin: 15px auto;
     width: 800px;
     padding: 40px 0;
+    max-width: 800px;
+
 
 }
 
@@ -20,7 +22,7 @@
 
 .contact-table{
     width: 100% ;
-    max-width: 100%;
+    max-width: 1000px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     max-width: 1000px; 
