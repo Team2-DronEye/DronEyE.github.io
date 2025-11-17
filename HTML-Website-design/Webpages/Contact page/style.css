@@ -27,7 +27,9 @@
     border: 1px solid #ccc;
     max-width: 1000px; 
     margin: 0 auto;  
-    color: #0086b3;  
+    color: #0086b3; 
+    border-collapse: collapse;
+ 
 
 
 }
