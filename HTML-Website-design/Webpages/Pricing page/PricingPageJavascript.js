@@ -84,7 +84,7 @@ const translations = {
         "tierThree": 'Le plan Globetrotteur est idéal pour ceux qui souhaitent explorer tous les horizons du monde ! <a href="#GlobetrotterTier" class="buyButton">Globetrotteur</a>',
         "travelerTier": "À 20$ par mois, les membres du plan Voyageur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Exploration libre des grandes villes à travers le monde</li><li>5 heures de vol par chaque semaine!</li></ul></div>", 
         "aventurerTier": "À 40$ par mois, les membres du plan Aventurier recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages du plan Voyageur</li><li>Exploration libre de tous les villes et villages à travers le monde</li><li>Personnalisation de votre drone</li><li>15 heures de vol par chaque semaine!</li></ul></div>",
-        "globetrotterTier": "À 70$ par mois, les membres du plan Globetrotteur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages des precedents Étages</li><li>Exploration entiérement libre</li><li>Rien de limite sur des heures de vol</li><li>Priorité absolue sur le choix du mod<le de drone</li></ul></div>"
+        "globetrotterTier": "À 70$ par mois, les membres du plan Globetrotteur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages des plans précédents</li><li>Exploration entiérement libre</li><li>Rien de limite sur des heures de vol</li><li>Priorité absolue sur le choix du mod<le de drone</li></ul></div>"
     }
 };
 document.addEventListener('DOMContentLoaded', function() {
