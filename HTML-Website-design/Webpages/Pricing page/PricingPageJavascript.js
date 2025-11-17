@@ -80,10 +80,10 @@ const translations = {
         "Subscriptions": "PLANS D'ABONNEMENT",
         "introText": "Découvrir le monde par un nouveau point de vue avec DRONEYE! Rejoignez la famille de DRONEYE aujourd'hui et trouvez des nouveaux façons d'explorer sans fin! Choisissez ce qui vous intéresse le plus!",
         "tierOne": 'Le plan Voyageur est recommandé à tous grâce à ses offres exceptionnelles ! <a href="#TravelerTier" class="buyButton"><div style="font-size: 100%; text-align: center;">Voyageur</div></a>',
-        "tierTwo": 'Le plan Adventurier offre le meilleur rapport qualité-prix et de nouvelles expériences ! <a href="#AdventurerTier" class="buyButton">Adventurier</a>',
+        "tierTwo": 'Le plan Aventurier offre le meilleur rapport qualité-prix et de nouvelles expériences ! <a href="#AventurerTier" class="buyButton">Aventurier</a>',
         "tierThree": 'Le plan Globetrotteur est idéal pour ceux qui souhaitent explorer tous les horizons du monde ! <a href="#GlobetrotterTier" class="buyButton">Globetrotteur</a>',
         "travelerTier": "À 20$ par mois, les membres du plan Voyageur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Exploration libre des grandes villes à travers le monde</li><li>5 heures de vol par chaque semaine!</li></ul></div>", 
-        "adventurerTier": "À 40$ par mois, les membres du plan Aventurier recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages du plan Voyageur</li><li>Exploration libre de tous les villes et villages à travers le monde</li><li>Personnalisation de votre drone</li><li>15 heures de vol par chaque semaine!</li></ul></div>",
+        "aventurerTier": "À 40$ par mois, les membres du plan Aventurier recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages du plan Voyageur</li><li>Exploration libre de tous les villes et villages à travers le monde</li><li>Personnalisation de votre drone</li><li>15 heures de vol par chaque semaine!</li></ul></div>",
         "globetrotterTier": "À 70$ par mois, les membres du plan Globetrotteur recevront ce qui suit: <div style='margin-left: 40px'><ul><li>Tous les avantages des precedents Étages</li><li>Exploration entiérement libre</li><li>Rien de limite sur des heures de vol</li><li>Priorité absolue sur le choix du mod<le de drone</li></ul></div>"
     }
 };
